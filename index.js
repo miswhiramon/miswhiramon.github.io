@@ -4,7 +4,7 @@ setInterval(() => {
 
 var message = "草";
 function sendChatMessage() {
-    window.postMessage(message, 'https://miswshiramon.github.io/');
+    window.postMessage(message, 'https://miswhiramon.github.io//');
   }
 
 
