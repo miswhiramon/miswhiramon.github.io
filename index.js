@@ -41,7 +41,7 @@ window.addEventListener('message', function(event) {
     kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter 
     + "<br>" + "草割合:" + kusa_counter/all_comment_conter*100 + "%<br>";
 
-    drawchart();
+    //drawchart();
 
     
   }, false);
@@ -67,7 +67,7 @@ function onButtonClick(){
     var keyword = document.getElementById("keyword_value");
     keyword.textContent = checkword;
 }
-
+/*
 function drawchart(){
     var ctx = document.getElementById("myPieChart");
     var myPieChart = new Chart(ctx, {
@@ -92,3 +92,4 @@ function drawchart(){
         }
     });
 }
+:/
