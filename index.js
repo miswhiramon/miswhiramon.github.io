@@ -50,3 +50,9 @@ function updateName() {
     kusa.textContent += kusa_counter
     //para.textContent = name +"本";
 }
+
+function onButtonClick(){
+    var checkword = keyword_form.input_word.value;
+    var keyword = document.getElementById("keyword_value");
+    keyword.textContent = checkword;
+}
