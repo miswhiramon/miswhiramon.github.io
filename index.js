@@ -12,6 +12,9 @@ function sendChatMessage() {
 var kusa_counter = 0;
 var all_comment_conter = 0;
 
+var keyword_counter = 0;
+var checkword = "";
+
 window.addEventListener('message', function(event) {
     var username = event.data.username;
     var message = event.data.message;
@@ -21,14 +24,19 @@ window.addEventListener('message', function(event) {
     var user = document.createElement("li");
     user.innerHTML = "<h3><font color = 'blue'>"+username+"</font></h3>";
 
+    var keyword_count = document.getElementById("keyword_count");
+
     all_comment_conter += 1;
 
     if(message=="草"){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
-
         kusa_user_list.appendChild(user);
-
+    }
+    if(message==checkword){
+        keyword_counter+=1;
+        keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
+        + checkword + "割合" + keyword_counter/all_comment_conter*100 + "%<br>";
     }
     kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter 
     + "<br>" + "草割合:" + kusa_counter/all_comment_conter*100 + "%<br>";
@@ -52,7 +60,8 @@ function updateName() {
 }
 
 function onButtonClick(){
-    var checkword = keyword_form.input_word.value;
+    keyword_counter = 0;
+    checkword = keyword_form.input_word.value;
     var keyword = document.getElementById("keyword_value");
     keyword.textContent = checkword;
 }
