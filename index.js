@@ -9,7 +9,8 @@ function sendChatMessage() {
 
 var kusa_counter = 0;
 window.addEventListener('message', function(event) {
-    var message = event.data;
+    var username = event.data.username;
+    var message = event.data.message;
     var kusa = document.getElementById("kusa");
     if(message=="草"){
         kusa_counter+=1;
@@ -17,7 +18,9 @@ window.addEventListener('message', function(event) {
     kusa.textContent = kusa_counter;
   }, false);
 
-
+//全部のタグを取りたいときはSelectorAllを使う
+//<div>でid設定可能
+//querySelector('#message');とgetElementByID("message");は同じ
 const para = document.querySelector('p');
 
 para.addEventListener('click', updateName);
