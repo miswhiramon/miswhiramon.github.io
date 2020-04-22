@@ -82,7 +82,11 @@ function drawchart(){
         data: {
         labels: labels,
         datasets: [{
-            backgroundColor: color,
+            backgroundColor: [
+                "#BB5179",
+                "#FAFF67",
+                "#58A27C"
+            ],
             data: data 
         }]
         },
