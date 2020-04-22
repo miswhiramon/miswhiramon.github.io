@@ -27,5 +27,8 @@ para.addEventListener('click', updateName);
 
 function updateName() {
     let name = prompt('追加したい草の本数を入力');
-    para.textContent = name +"本";
+    var kusa = document.getElementById("kusa");
+    kusa_counter += parseInt(name)
+    kusa.textContent += kusa_counter
+    //para.textContent = name +"本";
 }
