@@ -30,7 +30,8 @@ window.addEventListener('message', function(event) {
         kusa_user_list.appendChild(user);
 
     }
-    kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter + "<br>";
+    kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter 
+    + "<br>" + "草割合:" + kusa_counter/all_comment_conter*100 + "%<br>";
 
     
   }, false);
