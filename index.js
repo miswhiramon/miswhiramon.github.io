@@ -17,11 +17,12 @@ window.addEventListener('message', function(event) {
     kusa.textContent = kusa_counter;
   }, false);
 
+
 const para = document.querySelector('p');
 
 para.addEventListener('click', updateName);
 
 function updateName() {
-let name = prompt('名前を入力して下さい');
-para.textContent = 'Player 1: ' + name;
+    let name = prompt('追加したい草の本数を入力');
+    para.textContent = name +"本";
 }
