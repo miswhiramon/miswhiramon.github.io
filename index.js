@@ -10,7 +10,7 @@ function sendChatMessage() {
   }*/
 
 var kusa_counter = 0;
-var all_comment_conter = 0;
+var all_comment_counter = 0;
 
 var keyword_counter = 0;
 var checkword = "";
@@ -26,7 +26,7 @@ window.addEventListener('message', function(event) {
 
     var keyword_count = document.getElementById("keyword_count");
 
-    all_comment_conter += 1;
+    all_comment_counter += 1;
 
     if(message=="草"){
         kusa_counter+=1;
@@ -36,10 +36,10 @@ window.addEventListener('message', function(event) {
     if(message==checkword){
         keyword_counter+=1;
         keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
-        + checkword + "割合" + keyword_counter/all_comment_conter*100 + "%<br>";
+        + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";
     }
-    kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter 
-    + "<br>" + "草割合:" + kusa_counter/all_comment_conter*100 + "%<br>";
+    kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
+    + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
 
     
     drawchart();
