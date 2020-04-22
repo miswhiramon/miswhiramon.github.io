@@ -44,6 +44,7 @@ window.addEventListener('message', function(event) {
     if(all_comment_counter%50==0){
         drawchart();
     }
+    drawchart();
     
 
     
