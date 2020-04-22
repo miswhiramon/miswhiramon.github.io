@@ -70,33 +70,34 @@ function onButtonClick(){
     keyword.textContent = checkword;
 }
 
-/*function drawchart(){
-    var ctx = document.getElementById("myPieChart");
+function drawchart(){
+    
     var data = [kusa_counter, keyword_counter, all_comment_counter];
     var labels = ["草", checkword ,"All comments"];
     var color = ["red", "yellow", "blue"];
+    var ctx = document.getElementById("myPieChart");
     var myPieChart = new Chart(ctx, {
         type: 'pie',
         data: {
-          labels: ["A型", "O型", "B型"],
-          datasets: [{
-              backgroundColor: [
-                  "#BB5179",
-                  "#FAFF67",
-                  "#58A27C"
-              ],
-              data: [38, 31, 21]
-          }]
+        labels: labels,
+        datasets: [{
+            backgroundColor: [
+                "#BB5179",
+                "#FAFF67",
+                "#58A27C"
+            ],
+            data: [38, 31, 21]
+        }]
         },
         options: {
-          title: {
+        title: {
             display: true,
             text: '血液型 割合'
-          }
         }
-      });
-}*/
-
+        }
+    });
+}
+/*
 function drawchart(){
     var ctx = document.getElementById("myPieChart");
     var myPieChart = new Chart(ctx, {
@@ -119,4 +120,4 @@ function drawchart(){
         }
         }
     });
-}
+}*/
