@@ -79,7 +79,7 @@ function drawchart(){
     var myPieChart = new Chart(ctx, {
         type: 'pie',
         data: {
-        labels: ["A型", "O型", "B型"],
+        labels: labels,
         datasets: [{
             backgroundColor: [
                 "#BB5179",
