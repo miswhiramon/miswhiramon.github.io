@@ -5,7 +5,7 @@ setInterval(() => {
 //var message = "草";
 var userInfo = { username:"田村", message:"草"};
 function sendChatMessage() {
-    window.postMessage(message, 'https://miswhiramon.github.io/');
+    window.postMessage(userInfo, 'https://miswhiramon.github.io/');
   }
 
 var kusa_counter = 0;
