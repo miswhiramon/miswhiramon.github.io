@@ -14,7 +14,7 @@ window.addEventListener('message', function(event) {
     var username = event.data.username;
     var message = event.data.message;
     var kusa = document.getElementById("kusa");
-    var kusa = document.getElementById("kusa_username");
+    var kusa_username = document.getElementById("kusa_username");
     if(message=="草"){
         kusa_counter+=1;
     }
