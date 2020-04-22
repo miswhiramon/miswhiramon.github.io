@@ -18,9 +18,10 @@ window.addEventListener('message', function(event) {
     var kusa_user = document.getElementById("kusa_username");
     if(message=="草"){
         kusa_counter+=1;
+        kusa_user.textContent = "草発言者:" + username;
     }
     kusa.textContent = kusa_counter;
-    kusa_user.textContent = username;
+    
   }, false);
 
 //全部のタグを取りたいときはSelectorAllを使う
