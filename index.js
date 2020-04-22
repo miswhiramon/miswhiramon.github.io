@@ -41,8 +41,10 @@ window.addEventListener('message', function(event) {
     kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
     + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
 
+    if(all_comment_counter%25==0){
+        drawchart();
+    }
     
-    drawchart();
     
 
     
@@ -86,7 +88,7 @@ function drawchart(){
                 "#FAFF67",
                 "#58A27C"
             ],
-            data: [38, 31, 21]
+            data: data
         }]
         },
         options: {
