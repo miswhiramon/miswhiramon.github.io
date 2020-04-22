@@ -10,6 +10,7 @@ function sendChatMessage() {
   }
 
 var kusa_counter = 0;
+var all_comment_conter = 0;
 
 window.addEventListener('message', function(event) {
     var username = event.data.username;
@@ -19,6 +20,9 @@ window.addEventListener('message', function(event) {
     var kusa_user_list = document.getElementById("kusa_list");
     var user = document.createElement("li");
     user.innerHTML = "<h3><font color = 'blue'>"+username+"</font></h3>";
+
+    all_comment_conter += 1;
+
     if(message=="草"){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
@@ -26,7 +30,8 @@ window.addEventListener('message', function(event) {
         kusa_user_list.appendChild(user);
 
     }
-    kusa.textContent = kusa_counter;
+    kusa.innerHTML =  kusa_counter + "<br>" + all_comment_conter + "<br>";
+
     
   }, false);
 
