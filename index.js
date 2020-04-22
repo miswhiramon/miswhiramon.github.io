@@ -18,7 +18,7 @@ window.addEventListener('message', function(event) {
     var kusa_user = document.getElementById("kusa_username");
     var kusa_user_list = document.getElementById("kusa_list");
     var user = document.createElement("li");
-    user.innerHTML = <h3><font color = "blue">username</font></h3>
+    user.innerHTML = "<h3><font color = 'blue'>"+username+"</font></h3>";
     if(message=="草"){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
