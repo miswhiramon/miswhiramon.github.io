@@ -10,16 +10,17 @@ function sendChatMessage() {
   }
 
 var kusa_counter = 0;
+
 window.addEventListener('message', function(event) {
     var username = event.data.username;
     var message = event.data.message;
     var kusa = document.getElementById("kusa");
-    var kusa_username = document.getElementById("kusa_username");
+    var kusa_user = document.getElementById("kusa_username");
     if(message=="草"){
         kusa_counter+=1;
     }
     kusa.textContent = kusa_counter;
-    kusa_username.textContent = username;
+    kusa_user.textContent = username;
   }, false);
 
 //全部のタグを取りたいときはSelectorAllを使う
