@@ -41,7 +41,10 @@ window.addEventListener('message', function(event) {
     kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter 
     + "<br>" + "草割合:" + kusa_counter/all_comment_conter*100 + "%<br>";
 
-    //drawchart();
+    if(all_comment_counter%50==0){
+        drawchart();
+    }
+    
 
     
   }, false);
@@ -67,29 +70,26 @@ function onButtonClick(){
     var keyword = document.getElementById("keyword_value");
     keyword.textContent = checkword;
 }
-/*
+
 function drawchart(){
     var ctx = document.getElementById("myPieChart");
+    var data = [kusa_counter, keyword_counter, all_comment_counter];
+    var labels = ["草", checkword ,"All comments"];
+    var color = ["red", "yellow", "blue"];
     var myPieChart = new Chart(ctx, {
         type: 'pie',
         data: {
-        labels: ["A型", "O型", "B型", "AB型"],
+        labels: labels,
         datasets: [{
-            backgroundColor: [
-                "#BB5179",
-                "#FAFF67",
-                "#58A27C",
-                "#3C00FF"
-            ],
-            data: [38, 31, 21, 10]
+            backgroundColor: color,
+            data: data 
         }]
         },
         options: {
         title: {
             display: true,
-            text: '血液型 割合'
+            text: '割合'
         }
         }
     });
 }
-:/
