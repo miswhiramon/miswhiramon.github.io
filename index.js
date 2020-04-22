@@ -2,12 +2,12 @@
 setInterval(() => {
     sendChatMessage()
 }, 1000);
-*/
+
 //var message = "草";
 var userInfo = { username:"田村", message:"草"};
 function sendChatMessage() {
     window.postMessage(userInfo, 'https://miswhiramon.github.io/');
-  }
+  }*/
 
 var kusa_counter = 0;
 var all_comment_conter = 0;
@@ -41,9 +41,7 @@ window.addEventListener('message', function(event) {
     kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_conter 
     + "<br>" + "草割合:" + kusa_counter/all_comment_conter*100 + "%<br>";
 
-    if(all_comment_counter%50==0){
-        drawchart();
-    }
+    
     drawchart();
     
 
