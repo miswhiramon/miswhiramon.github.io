@@ -103,8 +103,8 @@ function drawchart(){
 var num_choice = 4;
 var button_value = document.getElementById("button_value");
 button_value.textContent = num_choice;
-function plus_or_minus(){
-    if(true){
+function plus_or_minus(flag){
+    if(flag==1){
         num_choice += 1;
     }else{
         num_choice -= 1;
