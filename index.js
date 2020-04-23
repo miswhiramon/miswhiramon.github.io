@@ -109,6 +109,6 @@ function plus_or_minus(flag){
     }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
     }
-    button_value.textContent = num_choice;
+    button_value.textContent = "選択肢の数:"+num_choice;
 }
 
