@@ -49,10 +49,10 @@ window.addEventListener('message', function(event) {
 //timerの表示
 var timer = document.getElementById("timer");
 var time = 0;
-timer.innerHTML = time;
+timer.textContent = time;
 var log = function(){
     console.log("test");
-    timer.innerHTML= time;
+    timer.textContent= time;
     time += 1;
 };
 
