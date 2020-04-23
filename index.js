@@ -48,14 +48,12 @@ window.addEventListener('message', function(event) {
     }    
   }, false);
 
-//timerの表示
-var timer_value = document.getElementById("timer_value");
-var time = 60;
-timer_value.textContent = "投票終了まであと:"+time+"[sec]";
-
-
 
 function start_vote(){
+    //timerの表示
+    var timer_value = document.getElementById("timer_value");
+    var time = 60;
+    timer_value.textContent = "投票終了まであと:"+time+"[sec]";
     var log = function(){
         timer_value.textContent= "投票終了まであと:"+time+"[sec]";
         time -= 1;
