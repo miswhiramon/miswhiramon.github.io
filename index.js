@@ -106,7 +106,7 @@ button_value.textContent = num_choice;
 function plus_or_minus(flag){
     if(flag==1 && num_choice<11){
         num_choice += 1;
-    }else if(num_choice>2){
+    }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
     }
     button_value.textContent = num_choice;
