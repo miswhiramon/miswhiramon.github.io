@@ -39,3 +39,14 @@ color: white;
 height: 50px;
 width: 50px;
 }
+
+.vote_btn{
+border-radius: 5px;
+font-size: 30px;
+text-align: center;
+background-color: red;
+text-align: center;
+color: white;
+height: 50px;
+width: 100px;
+}

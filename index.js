@@ -63,8 +63,11 @@ var log = function(){
     }
 };
 
-var timer = setInterval(log, 1000);
-// 1秒ごとに"test"と表示されるタイマー
+function start_vote(){
+    // 1秒ごとに"test"と表示されるタイマー
+    var timer = setInterval(log, 1000);
+}
+
 
 
 //全部のタグを取りたいときはSelectorAllを使う
