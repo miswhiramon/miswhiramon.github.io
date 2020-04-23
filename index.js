@@ -50,8 +50,8 @@ window.addEventListener('message', function(event) {
 var timer_value = document.getElementById("timer_value");
 var time = 60;
 timer_value.textContent = "投票終了まであと:"+time+"[sec]";
+
 var log = function(){
-    console.log("test");
     timer_value.textContent= "投票終了まであと:"+time+"[sec]";
     time -= 1;
     if(time<0){
@@ -67,7 +67,7 @@ var timer = setInterval(log, 1000);
 //全部のタグを取りたいときはSelectorAllを使う
 //<div>でid設定可能
 //querySelector('#message');とgetElementByID("message");は同じ
-const para = document.querySelector('p');
+/*const para = document.querySelector('p');
 
 para.addEventListener('click', updateName);
 
@@ -77,7 +77,7 @@ function updateName() {
     kusa_counter += parseInt(name)
     kusa.textContent += kusa_counter
     //para.textContent = name +"本";
-}
+}*/
 
 function onButtonClick(){
     keyword_counter = 0;
