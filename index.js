@@ -99,3 +99,16 @@ function drawchart(){
     });
 }
 
+//何択投票にするか
+var num_choice = 4;
+var button_value = document.getElementById("button_value");
+button_value.textContent = num_choice;
+function plus_or_minus(){
+    if(true){
+        num_choice += 1;
+    }else{
+        num_choice -= 1;
+    }
+    button_value.textContent = num_choice;
+}
+
