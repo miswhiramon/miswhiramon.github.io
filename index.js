@@ -43,12 +43,16 @@ window.addEventListener('message', function(event) {
 
     if(all_comment_counter%3==0){
         drawchart();
-    }
-    
-    
-
-    
+    }    
   }, false);
+
+//timer
+var log = function(){
+    console.log("test");
+};
+  
+var timer = setInterval(log, 1000);
+  // 3秒ごとに"test"と表示されるタイマー
 
 //全部のタグを取りたいときはSelectorAllを使う
 //<div>でid設定可能
