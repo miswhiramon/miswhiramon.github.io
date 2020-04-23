@@ -48,12 +48,15 @@ window.addEventListener('message', function(event) {
 
 //timerの表示
 var timer_value = document.getElementById("timer_value");
-var time = 0;
+var time = 60;
 timer_value.textContent = "Counter:"+time;
 var log = function(){
     console.log("test");
     timer_value.textContent= "Counter:"+time;
-    time += 1;
+    time -= 1;
+    if(time<0){
+        clearInterval(timer);
+    }
 };
 
 var timer = setInterval(log, 1000);
