@@ -47,12 +47,12 @@ window.addEventListener('message', function(event) {
   }, false);
 
 //timerの表示
-var timer = document.getElementById("timer");
+var timer_value = document.getElementById("timer_value");
 var time = 0;
-timer.textContent = "Counter:"+time;
+timer_value.textContent = "Counter:"+time;
 var log = function(){
     console.log("test");
-    timer.textContent= "Counter:"+time;
+    timer_value.textContent= "Counter:"+time;
     time += 1;
 };
 
