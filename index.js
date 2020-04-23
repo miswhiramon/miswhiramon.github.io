@@ -46,13 +46,19 @@ window.addEventListener('message', function(event) {
     }    
   }, false);
 
-//timer
+//timerの表示
+var timer = document.getElementById("timer");
+var time = 0;
 var log = function(){
     console.log("test");
+    timer.innerHTML= time;
+    time += 1;
 };
-  
+
 var timer = setInterval(log, 1000);
-  // 3秒ごとに"test"と表示されるタイマー
+// 1秒ごとに"test"と表示されるタイマー
+
+
 
 //全部のタグを取りたいときはSelectorAllを使う
 //<div>でid設定可能
