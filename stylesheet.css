@@ -25,6 +25,8 @@ p {
     padding: 3px 10px;
     display: inline-block;
     cursor:pointer;
+    height: 50px;
+    width: 250px;
   }
 
 .btn{
