@@ -41,7 +41,7 @@ window.addEventListener('message', function(event) {
     kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
     + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
 
-    if(all_comment_counter%25==0){
+    if(all_comment_counter%3==0){
         drawchart();
     }
     
