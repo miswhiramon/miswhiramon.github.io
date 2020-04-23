@@ -91,6 +91,9 @@ function drawchart(){
         title: {
             display: true,
             text: '投票 割合'
+        },
+        animation: {
+            animateRotate: false
         }
         }
     });
