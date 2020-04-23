@@ -104,7 +104,7 @@ var num_choice = 4;
 var button_value = document.getElementById("button_value");
 button_value.textContent = num_choice;
 function plus_or_minus(flag){
-    if(flag==1 && num_choice<11){
+    if(flag==1 && num_choice<10){
         num_choice += 1;
     }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
