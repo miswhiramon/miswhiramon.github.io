@@ -53,17 +53,18 @@ var timer_value = document.getElementById("timer_value");
 var time = 60;
 timer_value.textContent = "投票終了まであと:"+time+"[sec]";
 
-var log = function(){
-    timer_value.textContent= "投票終了まであと:"+time+"[sec]";
-    time -= 1;
-    counter_enable = true;
-    if(time<0){
-        clearInterval(timer);
-        counter_enable = false;
-    }
-};
+
 
 function start_vote(){
+    var log = function(){
+        timer_value.textContent= "投票終了まであと:"+time+"[sec]";
+        time -= 1;
+        counter_enable = true;
+        if(time<0){
+            clearInterval(timer);
+            counter_enable = false;
+        }
+    };
     // 1秒ごとに"test"と表示されるタイマー
     var timer = setInterval(log, 1000);
 }
