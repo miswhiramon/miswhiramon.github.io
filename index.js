@@ -14,6 +14,7 @@ var all_comment_counter = 0;
 
 var keyword_counter = 0;
 var checkword = "";
+var counter_enable = false;
 
 window.addEventListener('message', function(event) {
     var username = event.data.username;
@@ -28,20 +29,20 @@ window.addEventListener('message', function(event) {
 
     all_comment_counter += 1;
 
-    if(message=="草"){
+    if(message=="草" && counter_enable){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
         kusa_user_list.appendChild(user);
+        kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
+        + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
     }
-    if(message==checkword){
+    if(message==checkword && counter_enable){
         keyword_counter+=1;
         keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
         + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";
     }
-    kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
-    + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
-
-    if(all_comment_counter%3==0){
+    
+    if(counter_enable){
         drawchart();
     }    
   }, false);
@@ -54,14 +55,15 @@ timer_value.textContent = "投票終了まであと:"+time+"[sec]";
 var log = function(){
     timer_value.textContent= "投票終了まであと:"+time+"[sec]";
     time -= 1;
+    counter_enable = true;
     if(time<0){
         clearInterval(timer);
+        counter_enable = false;
     }
 };
 
 var timer = setInterval(log, 1000);
 // 1秒ごとに"test"と表示されるタイマー
-
 
 
 //全部のタグを取りたいときはSelectorAllを使う
