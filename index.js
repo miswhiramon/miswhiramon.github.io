@@ -32,17 +32,18 @@ window.addEventListener('message', function(event) {
     if(message=="草" && counter_enable){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
-        kusa_user_list.appendChild(user);
-        kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
-        + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
+        kusa_user_list.appendChild(user);        
     }
     if(message==checkword && counter_enable){
-        keyword_counter+=1;
-        keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
-        + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";
+        keyword_counter+=1;        
     }
     
     if(counter_enable){
+        kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
+        + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
+
+        keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
+        + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";
         drawchart();
     }    
   }, false);
