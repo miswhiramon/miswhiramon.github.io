@@ -14,7 +14,7 @@
 
 p {
     font-family: 'helvetica neue', helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
@@ -27,7 +27,7 @@ p {
     display: inline-block;
     cursor:pointer;
     height: 40px;
-    width: 250px;
+    width: 300px;
   }
 
 .btn{
