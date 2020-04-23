@@ -119,6 +119,7 @@ function drawchart(){
     });
 }
 
+//投票の選択肢,2~10択
 //何択投票にするか
 var num_choice = 4;
 var button_value = document.getElementById("button_value");
@@ -132,3 +133,7 @@ function plus_or_minus(flag){
     button_value.textContent = "選択肢の数:"+num_choice;
 }
 
+
+var org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+
+var choice_label=org_choice_label.slice(0,num_choice);
