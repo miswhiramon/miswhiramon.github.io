@@ -63,7 +63,7 @@ function start_vote(){
             clearInterval(timer);
             counter_enable = false;
             var body=document.body;
-            body.style.backgroundColor = lightgreen;
+            body.style.backgroundColor ='lightgreen';
         }
     };
     // 1秒ごとに"test"と表示されるタイマー
