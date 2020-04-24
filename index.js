@@ -72,10 +72,10 @@ function start_vote(){
 
 function back_color(){
     var body=document.body;
-    if(body.style.backgroundColor =='transparent'){        
+    if(body.style.backgroundColor ==''){        
         body.style.backgroundColor ='rgb(0,200,0)';
     }else{
-        body.style.backgroundColor = 'transparent';
+        body.style.backgroundColor = '';
     }    
 }
 
