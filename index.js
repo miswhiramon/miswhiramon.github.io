@@ -74,6 +74,11 @@ function back_color(){
     body.style.backgroundColor ='lightgreen';
 }
 
+function back_color_reset(){
+    var body=document.body;
+    body.style.backgroundColor = 'transparent';
+}
+
 
 //全部のタグを取りたいときはSelectorAllを使う
 //<div>でid設定可能
