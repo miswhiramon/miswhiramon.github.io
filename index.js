@@ -62,14 +62,17 @@ function start_vote(){
         if(time<0){
             clearInterval(timer);
             counter_enable = false;
-            var body=document.body;
-            body.style.backgroundColor ='lightgreen';
+            
         }
     };
     // 1秒ごとに"test"と表示されるタイマー
     var timer = setInterval(log, 1000);
 }
 
+function back_color(){
+    var body=document.body;
+    body.style.backgroundColor ='lightgreen';
+}
 
 
 //全部のタグを取りたいときはSelectorAllを使う
