@@ -69,9 +69,17 @@ function start_vote(){
     var timer = setInterval(log, 1000);
 }
 
+var back_color_flag = false;
 function back_color(){
     var body=document.body;
-    body.style.backgroundColor ='lightgreen';
+    if(back_color_flag=false){        
+        body.style.backgroundColor ='lightgreen';
+        back_color_flag=true;
+    }else{
+        body.style.backgroundColor = 'transparent';
+        back_color_flag=false;
+    }
+    
 }
 
 function back_color_reset(){
