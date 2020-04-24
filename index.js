@@ -73,7 +73,7 @@ function start_vote(){
 function back_color(){
     var body=document.body;
     if(body.style.backgroundColor =='transparent'){        
-        body.style.backgroundColor ='lightgreen';
+        body.style.backgroundColor ='green';
     }else{
         body.style.backgroundColor = 'transparent';
     }
