@@ -150,14 +150,6 @@ function drawBarChart(){
             label: 'A店 来客数',
             data: [62, 65, 93, 85, 51, 66, 47],
             backgroundColor: "rgba(219,39,91,0.5)"
-            },{
-            label: 'B店 来客数',
-            data: [55, 45, 73, 75, 41, 45, 58],
-            backgroundColor: "rgba(130,201,169,0.5)"
-            },{
-            label: 'C店 来客数',
-            data: [33, 45, 62, 55, 31, 45, 38],
-            backgroundColor: "rgba(255,183,76,0.5)"
             }
         ]
         },
