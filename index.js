@@ -142,7 +142,7 @@ function drawPieChart(){
 function drawBarChart(){
     var ctx = document.getElementById("myBarChart");
     var myBarChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'horizontalBar',
         data: {
         labels: ['8月1日', '8月2日', '8月3日', '8月4日', '8月5日', '8月6日', '8月7日'],
         datasets: [
