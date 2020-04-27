@@ -167,7 +167,7 @@ function drawBarChart(){
                 display: true,
                 text: 'コメント数'
             },
-            scales: {
+            /*scales: {
                 yAxes: [{
                 ticks: {
                     //suggestedMax: 100,
@@ -178,7 +178,7 @@ function drawBarChart(){
                     }
                 }
                 }]
-            },
+            },*/
             animation: {
                 duration: 0,
                 onComplete: function () {
@@ -191,7 +191,7 @@ function drawBarChart(){
                         for (var i = 0; i < dataset.data.length; i++) {
                             var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
                             console.log(dataset.data[i] + ":" + model.x + ":" + model.y);
-                            ctx.fillText(dataset.data[i].toFixed(1)+"%", model.x, model.y - 2);
+                            ctx.fillText(dataset.data[i].toFixed(1)+"%", model.x*1.1, model.y *1.05);
                             
                         }
                     });
