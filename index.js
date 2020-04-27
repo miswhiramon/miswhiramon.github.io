@@ -142,14 +142,18 @@ function drawPieChart(){
 
 function drawBarChart(){
     var ctx = document.getElementById("myBarChart");
+
+    var data = [kusa_counter, keyword_counter, all_comment_counter];
+    var labels = ["草", checkword ,"All comments"];
+    var color = ["red", "yellow", "blue"];
     var myBarChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
-        labels: ['8月1日', '8月2日', '8月3日', '8月4日', '8月5日', '8月6日', '8月7日'],
+        labels: labels,
         datasets: [
             {
-            label: 'A店 来客数',
-            data: [62, 65, 93, 85, 51, 66, 47],
+            label: 'コメント数',
+            data: data,
             backgroundColor: "rgba(219,39,91,0.5)"
             }
         ]
@@ -157,20 +161,21 @@ function drawBarChart(){
         options: {
         title: {
             display: true,
-            text: '支店別 来客数'
+            text: 'コメント数'
         },
         scales: {
             yAxes: [{
             ticks: {
-                suggestedMax: 100,
+                //suggestedMax: 100,
                 suggestedMin: 0,
-                stepSize: 10,
+                stepSize: 20,
                 callback: function(value, index, values){
                 return  value +  '人'
                 }
             }
             }]
         },
+        animation:false
         }
     });
 }
