@@ -153,6 +153,7 @@ function drawBarChart(){
         type: 'horizontalBar',
         data: {
         labels: labels,
+        labelsData: ["100","200"],
         datasets: [
             {
             label: 'コメント数',
