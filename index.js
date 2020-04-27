@@ -173,7 +173,7 @@ function drawBarChart(){
                 suggestedMin: 0,
                 stepSize: 20,
                 callback: function(value, index, values){
-                return  value +  '人'
+                return  value
                 }
             }
             }]
