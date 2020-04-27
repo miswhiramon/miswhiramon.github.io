@@ -132,10 +132,7 @@ function drawPieChart(){
             display: true,
             text: '投票 割合'
         },
-        animation: {
-            animateRotate: false,
-            animateScale: false
-        }
+        animation: false
         }
     });
 }
