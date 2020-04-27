@@ -188,10 +188,12 @@ function drawBarChart(){
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'bottom';
                     this.data.datasets.forEach(function (dataset) {
-                        dataset.bars.forEach(function (bar) {
-                            ctx.fillText(bar.value, bar.x, bar.y);
-                            console.log(bar.value + ":" + bar.x + ":" + bar.y);
-                        });
+                        for (var i = 0; i < dataset.data.length; i++) {
+                            var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                            console.log(dataset.data[i] + ":" + model.x + ":" + model.y);
+                            ctx.fillText(dataset.data[i], model.x, model.y - 2);
+                            
+                        }
                     });
                 }
             }
