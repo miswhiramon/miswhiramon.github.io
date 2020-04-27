@@ -189,6 +189,7 @@ function drawBarChart(){
                     ctx.textBaseline = 'bottom';
                     this.datasets.forEach(function (dataset) {
                         dataset.bars.forEach(function (bar) {
+                            console.log(bar.value + ":" + bar.x + ":" + bar.y);
                             ctx.fillText(bar.value, bar.x, bar.y);
                         });
                     });
