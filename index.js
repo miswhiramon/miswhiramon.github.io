@@ -79,10 +79,6 @@ function back_color(){
     }    
 }
 
-function back_color_reset(){
-    var body=document.body;
-    body.style.backgroundColor = 'transparent';
-}
 
 
 //全部のタグを取りたいときはSelectorAllを使う
@@ -150,5 +146,4 @@ function plus_or_minus(flag){
 
 
 var org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
-
 var choice_label=org_choice_label.slice(0,num_choice);
