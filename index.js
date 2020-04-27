@@ -114,7 +114,10 @@ function onButtonClick(){
 
 function drawPieChart(){
     
-    var data = [kusa_counter/all_comment_counter, keyword_counter/all_comment_counter, all_comment_counter/all_comment_counter];
+    var data = [kusa_counter, keyword_counter, all_comment_counter];
+    var proportion = data.map(function(num){
+        return float(num/all_comment_counter);
+    })
     var labels = ["草", checkword ,"All comments"];
     var color = ["red", "yellow", "blue"];
     var ctx = document.getElementById("myPieChart");
@@ -124,7 +127,7 @@ function drawPieChart(){
         labels: labels,
         datasets: [{
             backgroundColor: color,
-            data: data
+            data: proportion
         }]
         },
         options: {
