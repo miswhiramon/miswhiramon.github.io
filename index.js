@@ -182,11 +182,16 @@ function drawBarChart(){
             animation: {
                 duration: 0,
                 onComplete: function () {
+                    //canvasを取得
                     var ctx = this.chart.ctx;
                     ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'bottom';
-                    ctx.fillText("ああああああ",50,50);
+                    this.datasets.forEach(function (dataset) {
+                        dataset.bars.forEach(function (bar) {
+                            ctx.fillText(bar.value, bar.x, bar.y);
+                        });
+                    });
                 }
             }
         }
