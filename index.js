@@ -167,7 +167,7 @@ function drawBarChart(){
                 display: true,
                 text: 'コメント数'
             },
-            /*scales: {
+            scales: {
                 yAxes: [{
                 ticks: {
                     //suggestedMax: 100,
@@ -178,7 +178,7 @@ function drawBarChart(){
                     }
                 }
                 }]
-            },*/
+            },
             animation: {
                 duration: 0,
                 onComplete: function () {
