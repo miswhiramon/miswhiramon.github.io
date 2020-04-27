@@ -144,7 +144,7 @@ function drawBarChart(){
     
     var data = [kusa_counter, keyword_counter, all_comment_counter];
     var proportion = data.map(function(num){
-        return float(num/all_comment_counter);
+        return 100*(num/all_comment_counter);
     })
 
     var labels = ["草", checkword ,"All comments"];
