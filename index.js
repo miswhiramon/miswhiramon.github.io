@@ -42,7 +42,7 @@ window.addEventListener('message', function(event) {
     for(var i=0;i<3;i++){
         var temp = message.toUpperCase();
         if(temp==org_choice_label[i]){
-            
+
         }
     }
     
@@ -52,7 +52,7 @@ window.addEventListener('message', function(event) {
 
         keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
         + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";
-        drawchart();
+        drawPieChart();
     }    
   }, false);
 
@@ -111,7 +111,7 @@ function onButtonClick(){
     keyword.textContent = checkword;
 }
 
-function drawchart(){
+function drawPieChart(){
     
     var data = [kusa_counter, keyword_counter, all_comment_counter];
     var labels = ["草", checkword ,"All comments"];
