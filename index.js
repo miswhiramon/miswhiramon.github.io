@@ -133,7 +133,8 @@ function drawPieChart(){
             text: '投票 割合'
         },
         animation: {
-            animateRotate: false
+            animateRotate: false,
+            animateScale: false
         }
         }
     });
