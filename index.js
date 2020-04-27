@@ -156,30 +156,39 @@ function drawBarChart(){
         labelsData: ["100","200","300"],
         datasets: [
             {
-            label: 'コメント数',
-            data: proportion,
-            backgroundColor: "rgba(219,39,91,0.5)"
+                label: 'コメント数',
+                data: proportion,
+                backgroundColor: "rgba(219,39,91,0.5)"
             }
         ]
         },
         options: {
-        title: {
-            display: true,
-            text: 'コメント数'
-        },
-        scales: {
-            yAxes: [{
-            ticks: {
-                //suggestedMax: 100,
-                suggestedMin: 0,
-                stepSize: 20,
-                callback: function(value, index, values){
-                return  value
+            title: {
+                display: true,
+                text: 'コメント数'
+            },
+            scales: {
+                yAxes: [{
+                ticks: {
+                    //suggestedMax: 100,
+                    suggestedMin: 0,
+                    stepSize: 20,
+                    callback: function(value, index, values){
+                    return  value
+                    }
+                }
+                }]
+            },
+            animation: {
+                duration: 0,
+                onComplete: function () {
+                    var ctx = this.chart.ctx;
+                    ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'bottom';
+                    ctx.fillText("ああああああ",50,50);
                 }
             }
-            }]
-        },
-        animation:false,
         }
     });
 }
