@@ -3,55 +3,68 @@
     <head>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+                
     </head>
     <body>
+        <div class="border col-5">
+            <p>YouTube Live VOTE</p>
+            <form name="keyword_form">
+                <input name="input_word" type="text" size="100" style="width: 100px">
+                <button type="button" onclick="onButtonClick()">
+                    この単語をカウントする！
+                </button>
+            </form>
 
-        <p>YouTube Live VOTE</p>
-        <form name="keyword_form">
-            <input name="input_word" type="text" size="100" style="width: 100px">
-            <button type="button" onclick="onButtonClick()">
-                この単語をカウントする！
-            </button>
-        </form>
+            <!-- 選択肢の数を指定するボタン -->
+            <button type="button" class="btn" onclick="plus_or_minus(1)" autofocus="true">+</button>
+            <button type="button" class="btn" onclick="plus_or_minus(-1)" autofocus="true">-</button>
+            <div id="button_value"></div>
 
-        <!-- 選択肢の数を指定するボタン -->
-        <button type="button" class="btn" onclick="plus_or_minus(1)" autofocus="true">+</button>
-        <button type="button" class="btn" onclick="plus_or_minus(-1)" autofocus="true">-</button>
-        <div id="button_value"></div>
+            <!-- 投票を開始するボタン -->
+            <button type="button" class="vote_btn" onclick="start_vote()" autofocus="true">投票開始</button>
 
-        <!-- 投票を開始するボタン -->
-        <button type="button" class="vote_btn" onclick="start_vote()" autofocus="true">投票開始</button>
+            <!-- background colorボタン -->
+            <button type="button" class="background_color" onclick="back_color()" autofocus="true">クロマキー用背景</button>
+            <!-- <button type="button" class="background_color" onclick="back_color_reset()" autofocus="true">背景色OFF</button> -->
 
-        <!-- background colorボタン -->
-        <button type="button" class="background_color" onclick="back_color()" autofocus="true">クロマキー用背景</button>
-        <!-- <button type="button" class="background_color" onclick="back_color_reset()" autofocus="true">背景色OFF</button> -->
+            <!--timer counter-->>
+            <div id="timer_value"></div>
 
-        <!--timer counter-->>
-        <div id="timer_value"></div>
+            <!-- 任意検索キーワード -->
+            <div id="keyword_value"></div>
+            <div id="keyword_count"></div>
 
-        <!-- 任意検索キーワード -->
-        <div id="keyword_value"></div>
-        <div id="keyword_count"></div>
+            <div id="keyword_value"></div>
 
-        <div id="keyword_value"></div>
+            <div id="kusa">            
+            </div>
 
-        <div id="kusa">            
-        </div>
-
-        <h2>コメントグラフ</h2>
-        <canvas id="myPieChart"></canvas>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+            <h2>コメントグラフ</h2>
+            <canvas id="myPieChart"></canvas>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
 
-        <div id="kusa_username">
+            <div id="kusa_username">
+            </div>
+            
+
+            <ul id="kusa_list">
+            </ul>
+            <div class="bar">草メーター</div>
+            
+            
+            <script src="index.js"></script>
         </div>
         
 
-        <ul id="kusa_list">
-        </ul>
-        <div class="bar">草メーター</div>
-        
-        <p>草追加ボタン</p>
-        <script src="index.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- Bootstrap Javascript(jQuery含む) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
 </html>
