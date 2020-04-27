@@ -37,6 +37,14 @@ window.addEventListener('message', function(event) {
     if(message==checkword && counter_enable){
         keyword_counter+=1;        
     }
+
+    //messageが選択肢のうちどれなのかを判定
+    for(var i=0;i<3;i++){
+        var temp = message.toUpperCase();
+        if(temp==org_choice_label[i]){
+            
+        }
+    }
     
     if(counter_enable){
         kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
