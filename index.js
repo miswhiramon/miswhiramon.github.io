@@ -187,10 +187,10 @@ function drawBarChart(){
                     ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'bottom';
-                    this.datasets.forEach(function (dataset) {
+                    this.data.datasets.forEach(function (dataset) {
                         dataset.bars.forEach(function (bar) {
-                            console.log(bar.value + ":" + bar.x + ":" + bar.y);
                             ctx.fillText(bar.value, bar.x, bar.y);
+                            console.log(bar.value + ":" + bar.x + ":" + bar.y);
                         });
                     });
                 }
