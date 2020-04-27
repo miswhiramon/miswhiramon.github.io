@@ -127,7 +127,7 @@ function drawPieChart(){
         labels: labels,
         datasets: [{
             backgroundColor: color,
-            data: proportion
+            data: data
         }]
         },
         options: {
