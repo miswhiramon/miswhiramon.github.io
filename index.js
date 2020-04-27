@@ -115,9 +115,7 @@ function onButtonClick(){
 function drawPieChart(){
     
     var data = [kusa_counter, keyword_counter, all_comment_counter];
-    var proportion = data.map(function(num){
-        return 100*(num/all_comment_counter);
-    })
+    
     var labels = ["草", checkword ,"All comments"];
     var color = ["red", "yellow", "blue"];
     var ctx = document.getElementById("myPieChart");
@@ -143,7 +141,12 @@ function drawPieChart(){
 function drawBarChart(){
     var ctx = document.getElementById("myBarChart");
 
+    
     var data = [kusa_counter, keyword_counter, all_comment_counter];
+    var proportion = data.map(function(num){
+        return float(num/all_comment_counter);
+    })
+
     var labels = ["草", checkword ,"All comments"];
     var color = ["red", "yellow", "blue"];
     var myBarChart = new Chart(ctx, {
@@ -153,7 +156,7 @@ function drawBarChart(){
         datasets: [
             {
             label: 'コメント数',
-            data: data,
+            data: proportion,
             backgroundColor: "rgba(219,39,91,0.5)"
             }
         ]
