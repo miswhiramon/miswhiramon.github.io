@@ -180,7 +180,6 @@ function drawBarChart(){
             }]
         },
         animation:false,
-
         }
     });
 }
