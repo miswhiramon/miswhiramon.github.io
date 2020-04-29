@@ -191,8 +191,8 @@ function drawBarChart(){
                 yAxes: [{
                 ticks: {
                     beginAtZero: true,
-                    Max: 100,
-                    Min: 0,
+                    min: 0,
+                    max: 100,                    
                     stepSize: 20,
                     callback: function(value, index, values){
                     return  value
