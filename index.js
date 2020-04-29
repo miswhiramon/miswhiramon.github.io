@@ -160,6 +160,6 @@ function plus_or_minus(flag){
 
 
 var org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
-var org_counter_array=[0,0,0,0,0,0,0,0,0,0];
+var org_counter_array
 var choice_label=org_choice_label.slice(0,num_choice);
-var counter_array=org_counter_array.slice(0,num_choice);
+var counter_array
