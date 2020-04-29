@@ -48,29 +48,37 @@
         </form>
         -->
 
-        
-        <!-- 選択肢の数を指定するボタン -->
-        <div class="card border border-secondary text-gray">
-            <div class="card-header">
-                <h4>選択肢の数</h4>
+        <!--最初のページ-->
+        <div id="first_page">
+            <!-- 選択肢の数を指定するボタン -->
+            <div class="card border border-secondary text-gray">
+                <div class="card-header">
+                    <h4>選択肢の数</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">何択のアンケートにしますか？</h5>
+                    <div class="row" >
+                        <div class="col-1"></div>
+                        <div class="col-3" align-items: stretch>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="plus_or_minus(-1)">-</button>
+                        </div>
+                        <div class="col-3" align-items: stretch>
+                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" onclick="plus_or_minus(1)">+</button>
+                        </div>
+                        <div class="col-4">
+                            <div id="button_value" class="center-block"></div>
+                            <!--
+                                <span id="button_value" class="align-middle"></span>
+                            -->                
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">何択のアンケートにしますか？</h5>
-                <div class="row" >
-                    <div class="col-1"></div>
-                    <div class="col-3" align-items: stretch>
-                        <button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="plus_or_minus(-1)">-</button>
-                    </div>
-                    <div class="col-3" align-items: stretch>
-                        <button type="button" class="btn btn-outline-danger btn-lg btn-block" onclick="plus_or_minus(1)">+</button>
-                    </div>
-                    <div class="col-4">
-                        <div id="button_value" class="center-block"></div>
-                        <!--
-                            <span id="button_value" class="align-middle"></span>
-                        -->                
-                    </div>
-                    <div class="col-1"></div>
+
+            <div class="row">
+                <div class="col-12">
+                    <canvas id="myBarChart"></canvas>
                 </div>
             </div>
         </div>
@@ -100,13 +108,11 @@
 
         <h2>コメントグラフ</h2>
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <canvas id="myPieChart"></canvas>
             </div>
-            <div class="col-6">
-                <canvas id="myBarChart"></canvas>
-            </div>
         </div>
+        
                 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 

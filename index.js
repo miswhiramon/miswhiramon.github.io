@@ -138,12 +138,20 @@ button_value.innerHTML = "<h3><font color = blue>Choice: " + num_choice + "</fon
 function plus_or_minus(flag){
     if(flag==1 && num_choice<10){
         num_choice += 1;
+        
+        org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+        org_counter_array=[50,50,50,50,50,50,50,50,50,50];
         choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
+        drawBarChart();
     }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
+        
+        org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+        org_counter_array=[50,50,50,50,50,50,50,50,50,50];
         choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
+        drawBarChart();
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
     button_value.innerHTML = "<h3><font color = blue>Choice: " + num_choice + "</font></h3>";
