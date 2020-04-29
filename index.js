@@ -73,7 +73,7 @@ function start_vote(){
 
     var timer_value = document.getElementById("timer_value");
     //投票時間
-    var time = 30;
+    var time = 120;
     timer_value.textContent = "投票終了まであと:"+time+"[sec]";
     var log = function(){
         timer_value.textContent= "投票終了まであと:"+time+"[sec]";
