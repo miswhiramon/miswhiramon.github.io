@@ -130,6 +130,10 @@ function onButtonClick(){
 }*/
 
 
+var org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+var org_counter_array
+var choice_label=org_choice_label.slice(0,num_choice);
+var counter_array
 
 //投票の選択肢,2~10択
 //何択投票にするか
@@ -164,8 +168,3 @@ function plus_or_minus(flag){
 
 }
 
-
-var org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
-var org_counter_array
-var choice_label=org_choice_label.slice(0,num_choice);
-var counter_array
