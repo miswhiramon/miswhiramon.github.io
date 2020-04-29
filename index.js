@@ -174,3 +174,8 @@ function plus_or_minus(flag){
 function first2second(){
     document.getElementById("first_stage").style.display="none";
 }
+
+function second2first(){
+    document.getElementById("second_stage").style.display="none";
+    document.getElementById("first_stage").style.display="block";
+}
