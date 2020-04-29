@@ -168,3 +168,9 @@ function plus_or_minus(flag){
 
 }
 
+
+
+//ページ遷移用の関数
+function first2second(){
+    document.getElementById("first_stage").style.display="none";
+}
