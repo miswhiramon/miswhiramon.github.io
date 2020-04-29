@@ -32,7 +32,7 @@ window.addEventListener('message', function(event) {
     if(message=="草" && counter_enable){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
-        kusa_user_list.appendChild(user);        
+        kusa_user_list.appendChild(user);
     }
     if(message==checkword && counter_enable){
         keyword_counter+=1;        
@@ -60,6 +60,10 @@ window.addEventListener('message', function(event) {
 
 function start_vote(){
     //timerの表示
+    kusa_counter = 0;
+    all_comment_counter = 0;
+    keyword_counter = 0;
+    
     var timer_value = document.getElementById("timer_value");
     //投票時間
     var time = 60;
