@@ -119,14 +119,14 @@ function updateName() {
     kusa_counter += parseInt(name)
     kusa.textContent += kusa_counter
     //para.textContent = name +"本";
-}*/
+}
 
 function onButtonClick(){
     keyword_counter = 0;
     checkword = keyword_form.input_word.value;
     var keyword = document.getElementById("keyword_value");
     keyword.textContent = checkword;
-}
+}*/
 
 
 
