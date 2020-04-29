@@ -23,7 +23,7 @@ window.addEventListener('message', function(event) {
     var username = event.data.username;
     //コメント
     var message = event.data.message;
-    
+
     var kusa = document.getElementById("kusa");
     var kusa_user = document.getElementById("kusa_username");
     var kusa_user_list = document.getElementById("kusa_list");
@@ -34,14 +34,14 @@ window.addEventListener('message', function(event) {
 
     all_comment_counter += 1;
 
-    if(message=="草" && counter_enable){
+    /*if(message=="草" && counter_enable){
         kusa_counter+=1;
         kusa_user.textContent = "草発言者:" + username;
         kusa_user_list.appendChild(user);
     }
     if(message==checkword && counter_enable){
         keyword_counter+=1;
-    }
+    }*/
 
     //messageが選択肢のうちどれなのかを判定
     for(var i=0;i<num_choice;i++){
@@ -53,11 +53,11 @@ window.addEventListener('message', function(event) {
     }
     
     if(counter_enable){
-        kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
+        /*kusa.innerHTML =  "草:" + kusa_counter + "<br>" + "総コメント数" + all_comment_counter 
         + "<br>" + "草割合:" + kusa_counter/all_comment_counter*100 + "%<br>";
 
         keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
-        + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";
+        + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";*/
         drawPieChart();
         drawBarChart();
     }    
