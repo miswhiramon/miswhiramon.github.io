@@ -143,6 +143,7 @@ function plus_or_minus(flag){
         org_counter_array=[50,50,50,50,50,50,50,50,50,50];
         choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
+        all_choice_counter=1;
         drawBarChart();
     }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
@@ -151,6 +152,7 @@ function plus_or_minus(flag){
         org_counter_array=[50,50,50,50,50,50,50,50,50,50];
         choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
+        all_choice_counter=1;
         drawBarChart();
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
