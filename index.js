@@ -63,10 +63,10 @@ function start_vote(){
     kusa_counter = 0;
     all_comment_counter = 0;
     keyword_counter = 0;
-    
+
     var timer_value = document.getElementById("timer_value");
     //投票時間
-    var time = 60;
+    var time = 30;
     timer_value.textContent = "投票終了まであと:"+time+"[sec]";
     var log = function(){
         timer_value.textContent= "投票終了まであと:"+time+"[sec]";
