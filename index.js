@@ -188,6 +188,14 @@ function drawBarChart(){
                 text: 'コメント数'
             },
             scales: {
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 100,                  
+                        stepSize: 20
+                    }
+                    }],
                 yAxes: [{
                 ticks: {
                     beginAtZero: true,
