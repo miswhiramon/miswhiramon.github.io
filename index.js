@@ -210,6 +210,9 @@ function drawBarChart(){
                 }
                 }]
             },
+            tooltips:{
+                enabled: false, //ここにfalseを指定
+            },
             animation: {
                 duration: 0,
                 onComplete: function () {
