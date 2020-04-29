@@ -140,7 +140,7 @@ function plus_or_minus(flag){
         num_choice += 1;
         
         org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
-        org_counter_array=[50,50,50,50,50,50,50,50,50,50];
+        org_counter_array=[10,10,10,10,10,10,10,10,10,10];
         choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
         all_choice_counter=1;
