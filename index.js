@@ -18,8 +18,12 @@ var checkword = "";
 var counter_enable = false;
 
 window.addEventListener('message', function(event) {
+    //eventにはYoutubeのページ情報が入っている。なのでevent.originとすればurlも取得できる
+    //コメントのユーザー名
     var username = event.data.username;
+    //コメント
     var message = event.data.message;
+    
     var kusa = document.getElementById("kusa");
     var kusa_user = document.getElementById("kusa_username");
     var kusa_user_list = document.getElementById("kusa_list");
