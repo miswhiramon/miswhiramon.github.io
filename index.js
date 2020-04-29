@@ -36,7 +36,7 @@ window.addEventListener('message', function(event) {
         kusa_user_list.appendChild(user);
     }
     if(message==checkword && counter_enable){
-        keyword_counter+=1;        
+        keyword_counter+=1;
     }
 
     //messageが選択肢のうちどれなのかを判定
