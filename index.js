@@ -149,6 +149,8 @@ function drawPieChart(){
     });
 }
 
+var myBarChart;
+
 function drawBarChart(){
     var ctx = document.getElementById("myBarChart");
 
@@ -169,7 +171,7 @@ function drawBarChart(){
     if (myBarChart) {
         myBarChart.destroy();
     }
-    var myBarChart = new Chart(ctx, {
+    myBarChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
         labels: labels,
