@@ -190,8 +190,8 @@ function drawBarChart(){
             scales: {
                 yAxes: [{
                 ticks: {
-                    suggestedMax: 100,
-                    suggestedMin: 0,
+                    Max: 100,
+                    Min: 0,
                     stepSize: 20,
                     callback: function(value, index, values){
                     return  value
