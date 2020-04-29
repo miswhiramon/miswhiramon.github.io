@@ -39,10 +39,10 @@ window.addEventListener('message', function(event) {
     }
 
     //messageが選択肢のうちどれなのかを判定
-    for(var i=0;i<3;i++){
+    for(var i=0;i<num_choice;i++){
         var temp = message.toUpperCase();
-        if(temp==org_choice_label[i]){
-
+        if(temp==org_choice_label[i] && counter_enable){
+            counter_array[i]+=1;
         }
     }
     
@@ -59,10 +59,14 @@ window.addEventListener('message', function(event) {
 
 
 function start_vote(){
-    //timerの表示
+    //各変数初期化
     kusa_counter = 0;
     all_comment_counter = 0;
     keyword_counter = 0;
+    org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+    org_counter_array=[0,0,0,0,0,0,0,0,0,0];
+    choice_label=org_choice_label.slice(0,num_choice);
+    counter_array=org_counter_array.slice(0,num_choice);
 
     var timer_value = document.getElementById("timer_value");
     //投票時間
@@ -118,10 +122,10 @@ function onButtonClick(){
 
 function drawPieChart(){
     
-    var data = [kusa_counter, keyword_counter, all_comment_counter];
-    
+    var data = [kusa_counter, keyword_counter, all_comment_counter];    
     var labels = ["草", checkword ,"All comments"];
-    var color = ["red", "yellow", "blue"];
+
+    var color = ["red", "yellow", "blue",""];
     var ctx = document.getElementById("myPieChart");
     var myPieChart = new Chart(ctx, {
         type: 'pie',
@@ -146,13 +150,19 @@ function drawBarChart(){
     var ctx = document.getElementById("myBarChart");
 
     
-    var data = [kusa_counter, keyword_counter, all_comment_counter];
+    /*var data = [kusa_counter, keyword_counter, all_comment_counter];
     var proportion = data.map(function(num){
         return 100*(num/all_comment_counter);
     })
-
     var labels = ["草", checkword ,"All comments"];
-    var color = ["red", "yellow", "blue"];
+    */
+    var data = counter_array;
+    var proportion = data.map(function(num){
+        return 100*(num/all_comment_counter);
+    })
+    var labels = choice_label;
+
+    
     if (myBarChart) {
         myBarChart.destroy();
     }
@@ -216,12 +226,18 @@ button_value.textContent = "選択肢の数:"+num_choice;
 function plus_or_minus(flag){
     if(flag==1 && num_choice<10){
         num_choice += 1;
+        choice_label=org_choice_label.slice(0,num_choice);
+        counter_array=org_counter_array.slice(0,num_choice);
     }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
+        choice_label=org_choice_label.slice(0,num_choice);
+        counter_array=org_counter_array.slice(0,num_choice);
     }
     button_value.textContent = "選択肢の数:"+num_choice;
 }
 
 
 var org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+var org_counter_array=[0,0,0,0,0,0,0,0,0,0];
 var choice_label=org_choice_label.slice(0,num_choice);
+var counter_array=org_counter_array.slice(0,num_choice);
