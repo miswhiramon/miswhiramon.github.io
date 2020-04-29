@@ -134,7 +134,7 @@ function onButtonClick(){
 //何択投票にするか
 var num_choice = 4;
 var button_value = document.getElementById("button_value");
-button_value.textContent = "選択肢の数:"+num_choice;
+button_value.innerHTML = "<h3><font color = blue>選択肢数" + num_choice + "</font></h3>";
 function plus_or_minus(flag){
     if(flag==1 && num_choice<10){
         num_choice += 1;
@@ -146,7 +146,7 @@ function plus_or_minus(flag){
         counter_array=org_counter_array.slice(0,num_choice);
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
-    button_value.innerHTML = "<h3><font color = rgb(0,0,200)>選択肢数" + num_choice + "</font></h3>";
+    button_value.innerHTML = "<h3><font color = blue>選択肢数" + num_choice + "</font></h3>";
 
 }
 
