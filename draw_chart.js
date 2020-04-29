@@ -56,7 +56,6 @@ function drawBarChart(){
         //labelsData: ["100","200","300"],
         datasets: [
             {
-                label: 'コメント数',
                 data: proportion,
                 backgroundColor: "rgba(219,39,91,0.5)"
             }
@@ -65,7 +64,7 @@ function drawBarChart(){
         options: {
             title: {
                 display: true,
-                text: 'コメント数'
+                text: 'コメント割合'
             },
             scales: {
                 xAxes: [{
