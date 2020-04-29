@@ -149,6 +149,9 @@ function drawBarChart(){
 
     var labels = ["草", checkword ,"All comments"];
     var color = ["red", "yellow", "blue"];
+    if (myBarChart) {
+        myBarChart.destroy();
+    }
     var myBarChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
