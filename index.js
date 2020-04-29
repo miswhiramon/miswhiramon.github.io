@@ -11,6 +11,7 @@ function sendChatMessage() {
 
 var kusa_counter = 0;
 var all_comment_counter = 0;
+var all_choice_counter = 0;
 
 var keyword_counter = 0;
 var checkword = "";
@@ -42,6 +43,7 @@ window.addEventListener('message', function(event) {
     for(var i=0;i<num_choice;i++){
         var temp = message.toUpperCase();
         if(temp==org_choice_label[i] && counter_enable){
+            all_choice_counter+=1;
             counter_array[i]+=1;
         }
     }
@@ -62,6 +64,7 @@ function start_vote(){
     //各変数初期化
     kusa_counter = 0;
     all_comment_counter = 0;
+    all_choice_counter = 0;
     keyword_counter = 0;
     org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
     org_counter_array=[0,0,0,0,0,0,0,0,0,0];
@@ -158,7 +161,7 @@ function drawBarChart(){
     */
     var data = counter_array;
     var proportion = data.map(function(num){
-        return 100*(num/all_comment_counter);
+        return 100*(num/all_choice_counter);
     })
     var labels = choice_label;
 
