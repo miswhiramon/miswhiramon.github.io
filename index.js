@@ -169,7 +169,7 @@ function plus_or_minus(flag){
 }
 
 
-
+document.getElementById("second_stage").style.display="none";
 //ページ遷移用の関数
 function first2second(){
     document.getElementById("first_stage").style.display="none";
