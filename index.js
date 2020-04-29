@@ -201,10 +201,7 @@ function drawBarChart(){
                 }
             }
         }
-    });
-    /*if (myBarChart) {
-        myBarChart.destroy();
-    }*/
+    });    
 }
 
 //投票の選択肢,2~10択
