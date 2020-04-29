@@ -9,8 +9,8 @@ function sendChatMessage() {
     window.postMessage(userInfo, 'https://miswhiramon.github.io/');
 }*/
 
-var kusa_counter = 0;
-var all_comment_counter = 0;
+//var kusa_counter = 0;
+//var all_comment_counter = 0;
 var all_choice_counter = 0;
 
 var keyword_counter = 0;
@@ -23,12 +23,13 @@ window.addEventListener('message', function(event) {
     var username = event.data.username;
     //コメント
     var message = event.data.message;
-
+    /*
     var kusa = document.getElementById("kusa");
     var kusa_user = document.getElementById("kusa_username");
     var kusa_user_list = document.getElementById("kusa_list");
     var user = document.createElement("li");
     user.innerHTML = "<h3><font color = 'blue'>"+username+"</font></h3>";
+    */
 
     var keyword_count = document.getElementById("keyword_count");
 

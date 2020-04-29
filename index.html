@@ -27,8 +27,18 @@
             </div>
         </nav>
 
-        <!--タイトル-->
-        <p>YouTube Live VOTE</p>
+        <div class="row">
+            <div class="col-6">
+                <!--タイトル-->
+                <p>YouTube Live VOTE</p>
+            </div>
+            <div class="col-6">
+                <!-- background colorボタン -->
+        <button type="button" class="background_color" onclick="back_color()" autofocus="true">クロマキー用背景</button>
+            </div>
+        </div>
+        
+
         <form name="keyword_form">
             <input name="input_word" type="text" size="100" style="width: 100px">
             <button type="button" onclick="onButtonClick()">
@@ -44,9 +54,7 @@
         <!-- 投票を開始するボタン -->
         <button type="button" class="vote_btn" onclick="start_vote()" autofocus="true">投票開始</button>
 
-        <!-- background colorボタン -->
-        <button type="button" class="background_color" onclick="back_color()" autofocus="true">クロマキー用背景</button>
-        <!-- <button type="button" class="background_color" onclick="back_color_reset()" autofocus="true">背景色OFF</button> -->
+        
 
         <!--timer counter-->
         <div id="timer_value"></div>
