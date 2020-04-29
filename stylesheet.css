@@ -31,11 +31,11 @@ p {
     width: 300px;
   }
 
-.btn{
+.btn_css{
 border-radius: 5px;
 font-size: 30px;
 text-align: center;
-background-color: green;
+background-color: aqua;
 text-align: center;
 color: white;
 height: 50px;
