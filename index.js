@@ -59,6 +59,11 @@ init();
   i++;
 }*/
 
+//フォームのラベルアルファベットを格納する配列
+//選択肢の番号を格納する配列
+var label_array=["A","B","C","D","E","F","G","H","I","J"];
+var label_num_array=[1,2,3,4,5,6,7,8,9];
+
 function addForm(i) {
     var parent = document.getElementById('form_area');
     parent.insertAdjacentHTML('beforeend',`
@@ -74,8 +79,7 @@ function addForm(i) {
     </div>
     `);
     i++;
-    num_choice+=1;
-    
+    num_choice+=1;    
 }
 
 function deleteForm(i){
@@ -83,6 +87,10 @@ function deleteForm(i){
     delete_form.remove();
     num_choice-=1;
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
+}
+
+function update_id(){
+
 }
 
 function Hankaku2zenkaku(str) {
