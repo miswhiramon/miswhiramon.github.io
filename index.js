@@ -212,6 +212,7 @@ function plus_or_minus(flag){
         all_choice_counter=1;
         make_sample=true;
         drawBarChart();
+        addForm(num_choice);
     }else if(flag==-1 && num_choice>2){
         num_choice -= 1;
         
