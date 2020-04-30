@@ -112,7 +112,7 @@ function del_update_id(i){
         //var new_func = del_update_id(j-1);
         //buttonInstance.onclick = new Function("del_update_id("+ label_num_array[0] +")");
         
-        buttonInstance.onclick = function() { del_update_id(0); }     
+        buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }     
     }
     unable_button();
 }
