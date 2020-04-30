@@ -44,6 +44,7 @@ function init(){
     addForm(1);
     addForm(2);
     addForm(3);
+    unable_button();
 
 }
 
@@ -79,7 +80,8 @@ function addForm(i) {
     </div>
     `);
     i++;
-    num_choice+=1;    
+    num_choice+=1;
+    unable_button();
 }
 
 function deleteForm(i){
@@ -108,9 +110,21 @@ function del_update_id(i){
         buttonInstance.id = "Button"+ new_alphabet_label;
         //×ボタンを押したときに消すidも更新
         //var new_func = del_update_id(j-1);
-        buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");
+        buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");        
     }
+    unable_button();
+}
 
+function unable_button(){
+    var buttonInstance0 = document.getElementById("Button"+org_choice_label[0]);
+    var buttonInstance1 = document.getElementById("Button"+org_choice_label[0]);
+    if(num_choice<=2){        
+        buttonInstance0.onclick="";
+        buttonInstance1.onclick="";
+    }else{
+        buttonInstance0.onclick= new Function("del_update_id("+ label_num_array[0] +")");
+        buttonInstance1.onclick= new Function("del_update_id("+ label_num_array[1] +")");
+    }
 }
 
 function Hankaku2zenkaku(str) {
