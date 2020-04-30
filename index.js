@@ -69,12 +69,12 @@ function addForm(i) {
     parent.insertAdjacentHTML('beforeend',`
     
     <div class="row" id="`+ org_choice_label[i] +`">
-        <div class="col-1 d-flex align-items-center">` + org_choice_label[i] + `</div>
+        <div class="col-1 d-flex align-items-center" id="Title`+ org_choice_label[i] +`">` + org_choice_label[i] + `</div>
         <div class="col-4 d-flex align-items-center">
             <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="`+ org_choice_label[i] +`">
         </div>
         <div class="col-1 d-flex align-items-center">
-            <div class="batsu d-flex align-items-center" id="`+ org_choice_label[i] +`" onclick="deleteForm(`+ i +`)"></div>
+            <div class="batsu d-flex align-items-center" id="`+ org_choice_label[i] +`" onclick="del_update_id(`+ i +`)"></div>
         </button>
     </div>
     `);
@@ -89,7 +89,14 @@ function deleteForm(i){
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 }
 
-function update_id(){
+function del_update_id(i){
+    deleteForm(i);
+    for(var j=i+1;i<num_choice;j++){
+        var instance = getElementById(org_choice_label[i]);
+        instance.setAttribute('id', org_choice_label[i-1]);
+        var titleInstance = getElementById("Title"+ org_choice_label[i]);
+        titleInstance.textContent = org_choice_label(i-1);
+    }
 
 }
 
