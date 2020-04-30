@@ -93,7 +93,7 @@ function start_vote(){
 
     var timer_value = document.getElementById("timer_value");
     //投票時間
-    var time = 120;
+    var time = vote_time;
     timer_value.textContent = "投票終了まであと:"+time+"[sec]";
     var log = function(){
         timer_value.textContent= "投票終了まであと:"+time+"[sec]";
@@ -181,9 +181,14 @@ function plus_or_minus(flag){
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 }
 
-var vote_time;
+var vote_time=60;
 function time_manage(flag){
-    if(flag==1 && vote_time<990)
+    if(flag==1 && vote_time<990){
+        vote_time+=10;
+    }else if(flag==-1 && num_choice>20){
+        vote_time-=10;
+    }
+    time_value.innerHTML = "<h3><font color = blue> " + vote_time + "</font></h3>";
 
 }
 
