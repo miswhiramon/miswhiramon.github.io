@@ -55,8 +55,8 @@ function addForm(i) {
     parent.insertAdjacentHTML('beforeend',`
     <div>
         <div class="row">
-            <div class="col-1" align-items: stretch>` + org_choice_label[i] + `</div>
-            <div class="col-6" align-items: stretch>
+            <div class="col-1">` + org_choice_label[i] + `</div>
+            <div class="col-6">
                 <input type="text" placeholder="フォーム`+i+`" id=`+i+`>
             </div>
         </div>
