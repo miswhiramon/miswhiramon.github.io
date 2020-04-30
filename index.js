@@ -31,10 +31,10 @@ function init(){
     time_value.innerHTML = "<h3><font color = blue> 60</font></h3>";
 
 
+    addForm(0);
     addForm(1);
     addForm(2);
     addForm(3);
-    addForm(4);
 
 }
 
