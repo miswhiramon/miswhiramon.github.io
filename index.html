@@ -47,7 +47,7 @@
                 <div class="card-body">
                     <div class="row" >
                         <div class="col-6">
-                            <h6 class="card-title">何択のアンケートにしますか？</h6>
+                            <h6 class="card-title">選択肢の数:</h6>
                         </div>
                         <div class="col-6">
                             <h6 class="card-title">投票時間を入力</h6>
@@ -55,20 +55,29 @@
                     </div>
                     
                     <div class="row" >
+                        <div class="col-3" align-items: stretch>
+                            <button type="button" class="btn btn-outline-primary btn-lg" onclick="plus_or_minus(-1)">-</button>
+                        </div>
+                        <div class="col-3" align-items: stretch>
+                            <button type="button" class="btn btn-outline-danger btn-lg" onclick="plus_or_minus(1)">+</button>
+                        </div>
+                        <!--
+                        <div class="col-2">
+                            <div id="button_value" class="center-block"></div>             
+                        </div>
+                        -->
+                        
                         <div class="col-2" align-items: stretch>
-                            <button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="plus_or_minus(-1)">-</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="time_manage(-1)">-10</button>
                         </div>
                         <div class="col-2" align-items: stretch>
-                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" onclick="plus_or_minus(1)">+</button>
+                            <button type="button" class="btn btn-outline-danger btn-lg btn-block" onclick="time_manage(1)">+10</button>
                         </div>
                         <div class="col-2">
-                            <div id="button_value" class="center-block"></div>
+                            <div id="time_value" class="center-block"></div>
                             <!--
                                 <span id="button_value" class="align-middle"></span>
                             -->                
-                        </div>
-                        <div class="col-6">
-                            
                         </div>
                     </div>
 
