@@ -74,7 +74,7 @@ function addForm(i) {
             <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="Form`+ org_choice_label[i] +`">
         </div>
         <div class="col-1 d-flex align-items-center">
-            <div class="batsu d-flex align-items-center" id="`+ org_choice_label[i] +`" onclick="del_update_id(`+ i +`)"></div>
+            <div class="batsu d-flex align-items-center" id=Button"`+ org_choice_label[i] +`" onclick="del_update_id(`+ i +`)"></div>
         </button>
     </div>
     `);
@@ -104,6 +104,10 @@ function del_update_id(i){
         var formInstance = document.getElementById("Form"+org_choice_label[j]);
         formInstance.id = "Form"+ new_alphabet_label;
         formInstance.placeholder="選択肢"+Hankaku2zenkaku(String(j-1))+"を入力";
+        var buttonInstance = document.getElementById("Button"+org_choice_label[j]);
+        buttonInstance.id = "Button"+ new_alphabet_label;
+        //×ボタンを押したときに消すidも更新
+        buttonInstance.onclick = "del_update_id("+ j-1 +")";
     }
 
 }
