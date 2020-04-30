@@ -185,7 +185,7 @@ var vote_time=60;
 function time_manage(flag){
     if(flag==1 && vote_time<990){
         vote_time+=10;
-    }else if(flag==-1 && num_choice>20){
+    }else if(flag==-1 && vote_time>20){
         vote_time-=10;
     }
     time_value.innerHTML = "<h3><font color = blue> " + vote_time + "</font></h3>";
