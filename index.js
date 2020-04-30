@@ -40,7 +40,7 @@ function init(){
 
 init();
 
-/*function addForm(i) {
+function addForm(i) {
   var input_data = document.createElement('input');
   input_data.type = 'text';
   input_data.id = 'inputform_' + i;
@@ -48,16 +48,6 @@ init();
   var parent = document.getElementById('form_area');
   parent.appendChild(input_data);
   i++ ;
-}*/
-
-function addForm(i) {
-    var parent = document.getElementById('form_area');
-    parent.appendChild(`
-    <div>
-      <input type="text" placeholder="フォーム">
-    </div>
-    `);
-    i++;
 }
 
 
