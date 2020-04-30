@@ -54,7 +54,7 @@ batsu{
     content: "";
     display: block;
     width: 100%;/*バツ線の長さ*/
-    height: 10px;/*バツ線の太さ*/
+    height: 1px;/*バツ線の太さ*/
     background: #000;
     transform: rotate(45deg);
     transform-origin:0% 50%;
