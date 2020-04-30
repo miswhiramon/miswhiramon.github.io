@@ -17,6 +17,20 @@ var keyword_counter = 0;
 var checkword = "";
 var counter_enable = false;
 
+//最初に一回だけ実行したいもの
+function init(){
+    //グラフの描画
+    org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+    org_counter_array=[20,20,20,20,20,20,20,20,20,20];
+    choice_label=org_choice_label.slice(0,4);
+    counter_array=org_counter_array.slice(0,4);
+    all_choice_counter=1;
+    make_sample=true;
+    drawBarChart();
+}
+
+init();
+
 window.addEventListener('message', function(event) {
     //eventにはYoutubeのページ情報が入っている。なのでevent.originとすればurlも取得できる
     //コメントのユーザー名
