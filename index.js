@@ -16,7 +16,7 @@ var all_choice_counter = 0;
 var keyword_counter = 0;
 var checkword = "";
 var counter_enable = false;
-var num_choice = 4;
+var num_choice = 0;
 var button_value = document.getElementById("button_value");
 
 //最初に一回だけ実行したいもの
