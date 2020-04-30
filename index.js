@@ -69,7 +69,7 @@ function addForm(i) {
     var parent = document.getElementById('form_area');
     parent.insertAdjacentHTML('beforeend',`
     
-    <div class="row" id="`+ org_choice_label[i] +`">
+    <div class="row" id="row`+ org_choice_label[i] +`">
         <div class="col-1 d-flex align-items-center" id="Title`+ org_choice_label[i] +`">` + org_choice_label[i] + `</div>
         <div class="col-4 d-flex align-items-center">
             <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="Form`+ org_choice_label[i] +`">
@@ -98,7 +98,7 @@ function del_update_id(i){
     for(var j=i+1;i<num_choice;j++){
         //削除でずれてしまった分array[j-1]に対応するidやアルファベットをarray[j]に代入する。
         var new_alphabet_label = org_choice_label[j-1];
-        var instance = document.getElementById(org_choice_label[j]);
+        var instance = document.getElementById("row"+org_choice_label[j]);
         console.log(instance);
         instance.id = new_alphabet_label;
         var titleInstance = document.getElementById("Title"+ org_choice_label[j]);
