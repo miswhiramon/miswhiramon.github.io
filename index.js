@@ -57,13 +57,19 @@ function addForm(i) {
         <div class="row">
             <div class="col-1">` + org_choice_label[i] + `</div>
             <div class="col-6">
-                <input type="text" placeholder="フォーム`+i+`" id=`+i+`>
+                <input type="text" placeholder="選択肢`+Hankaku2zenkaku(i)+`を入力" id=`+i+`>
             </div>
         </div>
         
     </div>
     `);
     i++;
+}
+
+function Hankaku2zenkaku(str) {
+    return str.replace(/[A-Za-z0-9]/g, function(s) {
+        return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
+    });
 }
 
 
