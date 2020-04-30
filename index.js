@@ -181,7 +181,9 @@ function plus_or_minus(flag){
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 }
 
-function time_manage(){
+var vote_time;
+function time_manage(flag){
+    if(flag==1 && vote_time<990)
 
 }
 
