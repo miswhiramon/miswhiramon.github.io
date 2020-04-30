@@ -28,6 +28,7 @@ function init(){
     make_sample=true;
     drawBarChart();
 
+    var vote_time=60;
     time_value.innerHTML = "<h3><font color = blue> " + vote_time + "</font></h3>";
 }
 
