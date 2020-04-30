@@ -182,6 +182,10 @@ function plus_or_minus(flag){
 
 }
 
+function time_manage(){
+    
+}
+
 
 document.getElementById("second_stage").style.display="none";
 //ページ遷移用の関数
