@@ -60,17 +60,15 @@ init();
 function addForm(i) {
     var parent = document.getElementById('form_area');
     parent.insertAdjacentHTML('beforeend',`
-    <div>
-        <div class="row">
-            <div class="col-1 d-flex align-items-center">` + org_choice_label[i] + `</div>
-            <div class="col-4 d-flex align-items-center">
-                <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id=`+i+`>
-            </div>
-            <div class="col-1 d-flex align-items-center">
-                <div class="batsu d-flex align-items-center" ></div>
-            </button>
+    
+    <div class="row" id=`+ org_choice_label[i] +`>
+        <div class="col-1 d-flex align-items-center">` + org_choice_label[i] + `</div>
+        <div class="col-4 d-flex align-items-center">
+            <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id=`+i+`>
         </div>
-        
+        <div class="col-1 d-flex align-items-center">
+            <div class="batsu d-flex align-items-center" id=`+ org_choice_label[i] +`></div>
+        </button>
     </div>
     `);
     i++;
