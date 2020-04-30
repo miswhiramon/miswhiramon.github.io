@@ -108,7 +108,7 @@ function del_update_id(i){
         buttonInstance.id = "Button"+ new_alphabet_label;
         //×ボタンを押したときに消すidも更新
         //var new_func = del_update_id(j-1);
-        buttonInstance.onclick = "del_update_id("+ (j-1) +")";
+        buttonInstance.onclick = "del_update_id("+ (j-2) +")";
     }
 
 }
