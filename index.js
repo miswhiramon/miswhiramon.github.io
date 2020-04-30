@@ -226,7 +226,7 @@ function plus_or_minus(flag){
         all_choice_counter=1;
         make_sample=true;
         drawBarChart();
-        addForm(num_choice-1);
+        addForm(num_choice);
     }else if(flag==-1 && num_choice>2){        
         org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
         org_counter_array=[20,20,20,20,20,20,20,20,20,20];
