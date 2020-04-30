@@ -99,6 +99,7 @@ function del_update_id(i){
         //削除でずれてしまった分array[j-1]に対応するidやアルファベットをarray[j]に代入する。
         var new_alphabet_label = org_choice_label[j-1];
         var instance = document.getElementById(org_choice_label[j]);
+        console.log(instance);
         instance.id = new_alphabet_label;
         var titleInstance = document.getElementById("Title"+ org_choice_label[j]);
         titleInstance.id = "Title"+ new_alphabet_label;
