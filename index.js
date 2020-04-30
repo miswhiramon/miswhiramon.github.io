@@ -57,7 +57,7 @@ function addForm(i) {
       <input type="text" placeholder="フォーム">
     </div>
     `);
-    i++ ;
+    i++;
 }
 
 
