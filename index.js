@@ -47,7 +47,7 @@ function addForm(i) {
   input_data.placeholder = 'フォーム-' + i;
   var parent = document.getElementById('form_area');
   parent.appendChild(input_data);
-  i++ ;
+  i++;
 }
 
 
