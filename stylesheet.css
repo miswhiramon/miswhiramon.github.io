@@ -42,6 +42,11 @@ height: 50px;
 width: 50px;
 }
 
+.batsu{
+    font-size: 200%;
+    font-weight: bold;
+}
+
 .vote_btn{
 border-radius: 5px;
 font-size: 20px;
