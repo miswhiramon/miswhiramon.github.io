@@ -44,8 +44,8 @@ width: 50px;
 
 batsu{
     display: block;
-    width: 40px;/*枠の大きさ*/
-    height: 40px;/*枠の大きさ*/
+    width: 10px;/*枠の大きさ*/
+    height: 10px;/*枠の大きさ*/
     background: #CCC;
     position: relative;
 }
