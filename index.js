@@ -98,7 +98,7 @@ window.addEventListener('message', function(event) {
 
     var keyword_count = document.getElementById("keyword_count");
 
-    all_comment_counter += 1;
+    //all_comment_counter += 1;
 
     /*if(message=="草" && counter_enable){
         kusa_counter+=1;
