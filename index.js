@@ -54,7 +54,13 @@ function addForm(i) {
     var parent = document.getElementById('form_area');
     parent.insertAdjacentHTML('beforeend',`
     <div>
-      <input type="text" placeholder="フォーム`+i+`" id=`+i+`>
+        <div class="row">
+            <div class="col-1" align-items: stretch>` + org_choice_label[i] + `</div>
+            <div class="col-6" align-items: stretch>
+                <input type="text" placeholder="フォーム`+i+`" id=`+i+`>
+            </div>
+        </div>
+        
     </div>
     `);
     i++;
