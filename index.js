@@ -90,15 +90,20 @@ function deleteForm(i){
 }
 
 function del_update_id(i){
+    //とりあえず、削除する
     deleteForm(i);
+    //ずれた分のidやアルファベットを以下で修正してつじつま合わせする。
     for(var j=i+1;i<num_choice;j++){
+        //削除でずれてしまった分array[j-1]に対応するidやアルファベットをarray[j]に代入する。
+        var new_alphabet_label = org_choice_label[j-1];
         var instance = document.getElementById(org_choice_label[j]);
-        instance.id = org_choice_label[j-1];
+        instance.id = new_alphabet_label;
         var titleInstance = document.getElementById("Title"+ org_choice_label[j]);
-        titleInstance.id = "Title"+ org_choice_label[j-1];
-        titleInstance.textContent = org_choice_label[j-1];
-        //var formInstance = document.getElementById("Form"+org_choice_label[j]);
-        //formInstance.placeholder="選択肢"+Hankaku2zenkaku(String(j-1))+"を入力";
+        titleInstance.id = "Title"+ new_alphabet_label;
+        titleInstance.textContent = new_alphabet_label;
+        var formInstance = document.getElementById("Form"+org_choice_label[j]);
+        formInstance.id = "Form"+ new_alphabet_label;
+        formInstance.placeholder="選択肢"+Hankaku2zenkaku(String(j-1))+"を入力";
     }
 
 }
