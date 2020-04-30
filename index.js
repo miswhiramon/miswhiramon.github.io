@@ -17,6 +17,7 @@ var keyword_counter = 0;
 var checkword = "";
 var counter_enable = false;
 var num_choice = 4;
+var button_value = document.getElementById("button_value");
 
 //最初に一回だけ実行したいもの
 function init(){
@@ -80,6 +81,7 @@ function deleteForm(i){
     var delete_form = document.getElementById(org_choice_label[i]);
     delete_form.remove();
     num_choice-=1;
+    button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 }
 
 function Hankaku2zenkaku(str) {
@@ -211,7 +213,7 @@ var counter_array
 //投票の選択肢,2~10択
 //何択投票にするか
 
-var button_value = document.getElementById("button_value");
+
 var make_sample
 button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 function plus_or_minus(flag){
