@@ -95,6 +95,7 @@ function del_update_id(i){
         var instance = document.getElementById(org_choice_label[j]);
         instance.id = org_choice_label[j-1];
         var titleInstance = document.getElementById("Title"+ org_choice_label[j]);
+        titleInstance.id = "Title"+ org_choice_label[j-1];
         titleInstance.textContent = org_choice_label[j-1];
         //var formInstance = document.getElementById("Form"+org_choice_label[j]);
         //formInstance.placeholder="選択肢"+Hankaku2zenkaku(String(j-1))+"を入力";
