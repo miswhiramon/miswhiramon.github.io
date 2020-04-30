@@ -29,12 +29,28 @@ function init(){
     drawBarChart();
 
     time_value.innerHTML = "<h3><font color = blue> 60</font></h3>";
-    document.getElementById("form_list").appendChild(
-        
-    );
+
+
+    addForm(1);
+    addForm(2);
+    addForm(3);
+    addForm(4);
+
 }
 
 init();
+
+function addForm(i) {
+  var input_data = document.createElement('input');
+  input_data.type = 'text';
+  input_data.id = 'inputform_' + i;
+  input_data.placeholder = 'フォーム-' + i;
+  var parent = document.getElementById('form_area');
+  parent.appendChild(input_data);
+  i++ ;
+}
+
+
 
 window.addEventListener('message', function(event) {
     //eventにはYoutubeのページ情報が入っている。なのでevent.originとすればurlも取得できる
