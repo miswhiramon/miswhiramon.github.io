@@ -79,6 +79,7 @@ function addForm(i) {
 function deleteForm(i){
     var delete_form = document.getElementById(org_choice_label[i]);
     delete_form.remove();
+    num_choice-=1;
 }
 
 function Hankaku2zenkaku(str) {
