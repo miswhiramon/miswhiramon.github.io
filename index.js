@@ -113,7 +113,7 @@ function del_update_id(i){
         //buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");
         //buttonInstance.onclick = new Function(del_update_id(label_num_array[j-1]));
         //buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }
-        buttonInstance.onclick = del_update_id(label_num_array[j-1]);
+        buttonInstance.onclick = del_update_id(label_num_array[j-2]);
         //buttonInstance.setAttribute("onclick", ); 
     }
     unable_button();
