@@ -19,6 +19,13 @@ var counter_enable = false;
 
 //最初に一回だけ実行したいもの
 function init(){
+    all_choice_counter = 0;
+
+    keyword_counter = 0;
+    checkword = "";
+    counter_enable = false;
+
+
     //グラフの描画
     org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
     org_counter_array=[20,20,20,20,20,20,20,20,20,20];
