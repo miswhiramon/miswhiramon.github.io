@@ -235,7 +235,7 @@ function plus_or_minus(flag){
         all_choice_counter=1;
         make_sample=true;
         drawBarChart();
-        deleteForm(num_choice-1);
+        deleteForm(num_choice);
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
