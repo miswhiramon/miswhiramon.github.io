@@ -56,7 +56,7 @@ function addForm(i) {
     <div>
         <div class="row">
             <div class="col-1 d-flex align-items-center">` + org_choice_label[i] + `</div>
-            <div class="col-6 d-flex align-items-center">
+            <div class="col-4 d-flex align-items-center">
                 <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id=`+i+`>
             </div>
             <div class="col-1 d-flex align-items-center">
