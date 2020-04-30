@@ -27,6 +27,8 @@ function init(){
     all_choice_counter=1;
     make_sample=true;
     drawBarChart();
+
+    time_value.innerHTML = "<h3><font color = blue> " + vote_time + "</font></h3>";
 }
 
 init();
