@@ -179,11 +179,10 @@ function plus_or_minus(flag){
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
-
 }
 
 function time_manage(){
-    
+
 }
 
 
