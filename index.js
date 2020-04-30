@@ -95,7 +95,7 @@ function del_update_id(i){
         var instance = document.getElementById(org_choice_label[j]);
         instance.id = org_choice_label[j-1];
         var titleInstance = document.getElementById("Title"+ org_choice_label[j]);
-        titleInstance.textContent = org_choice_label(j-1);
+        titleInstance.textContent = org_choice_label[j-1];
     }
 
 }
