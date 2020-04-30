@@ -72,11 +72,15 @@ function addForm(i) {
     </div>
     `);
     i++;
+    num_choice+=1;
+    button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 }
 
 function deleteForm(i){
     var delete_form = document.getElementById(org_choice_label[i]);
     delete_form.remove();
+    num_choice-=1;
+    button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 }
 
 function Hankaku2zenkaku(str) {
