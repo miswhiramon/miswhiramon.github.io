@@ -92,10 +92,10 @@ function deleteForm(i){
 function del_update_id(i){
     deleteForm(i);
     for(var j=i+1;i<num_choice;j++){
-        var instance = document.getElementById(org_choice_label[i]);
-        instance.id = org_choice_label[i-1];
-        var titleInstance = getElementById("Title"+ org_choice_label[i]);
-        titleInstance.textContent = org_choice_label(i-1);
+        var instance = document.getElementById(org_choice_label[j]);
+        instance.id = org_choice_label[j-1];
+        var titleInstance = getElementById("Title"+ org_choice_label[j]);
+        titleInstance.textContent = org_choice_label(j-1);
     }
 
 }
