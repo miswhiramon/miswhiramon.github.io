@@ -154,7 +154,7 @@ var counter_array
 var num_choice = 4;
 var button_value = document.getElementById("button_value");
 var make_sample
-button_value.innerHTML = "<h3><font color = blue>Choice: " + num_choice + "</font></h3>";
+button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 function plus_or_minus(flag){
     if(flag==1 && num_choice<10){
         num_choice += 1;
@@ -178,7 +178,7 @@ function plus_or_minus(flag){
         drawBarChart();
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
-    button_value.innerHTML = "<h3><font color = blue>Choice: " + num_choice + "</font></h3>";
+    button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 
 }
 
