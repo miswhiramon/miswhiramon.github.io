@@ -42,32 +42,34 @@ height: 50px;
 width: 50px;
 }
 
-batsu{
+.batsu{
     display: block;
-    width: 10px;/*枠の大きさ*/
-    height: 10px;/*枠の大きさ*/
-    background: #CCC;
+    width: 30px;/*枠の大きさ*/
+    height: 30px;/*枠の大きさ*/
+    background: #FFFFFF00;
     position: relative;
 }
 
 .batsu::before, .batsu::after{
     content: "";
     display: block;
-    width: 100%;/*バツ線の長さ*/
-    height: 1px;/*バツ線の太さ*/
-    background: #000;
+    width: 2px;/*バツ線の太さ*/
+    height: 50%;/*バツ線長さ*/
+    background: #666;
     transform: rotate(45deg);
-    transform-origin:0% 50%;
+    transform-origin: 50% 50%;
     position: absolute;
-    top: calc(14% - 5px);
-    left: 14%;
+    left: 48%;
 }
 
 .batsu::after{
     transform: rotate(-45deg);
-    transform-origin:100% 50%;
-    left: auto;
-    right: 14%;
+}
+
+.batsu:hover{
+   cursor: pointer;
+   background: #0000000B;
+   border-radius: 100px;
 }
 
 .vote_btn{

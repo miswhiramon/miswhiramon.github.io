@@ -243,7 +243,6 @@ function time_manage(flag){
         vote_time-=10;
     }
     time_value.innerHTML = "<h3><font color = blue> " + vote_time + "</font></h3>";
-
 }
 
 
