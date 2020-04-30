@@ -98,6 +98,14 @@ function del_update_id(i){
     for(var j=i+1;i<num_choice;j++){
         //削除でずれてしまった分array[j-1]に対応するidやアルファベットをarray[j]に代入する。
         var new_alphabet_label = org_choice_label[j-1];
+        //×ボタンを押したときに消すidも更新
+        //var new_func = del_update_id(j-1);
+        //buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");
+        //buttonInstance.onclick = new Function(del_update_id(label_num_array[j-1]));
+        //buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }
+        //buttonInstance.onclick = del_update_id(label_num_array[j-1]);
+        buttonInstance.setAttribute("onclick", "del_update_id("+label_num_array[j-1]+")");
+        
         var instance = document.getElementById(org_choice_label[j]);
         console.log(instance);
         instance.id = new_alphabet_label;
@@ -109,13 +117,7 @@ function del_update_id(i){
         formInstance.placeholder="選択肢"+Hankaku2zenkaku(String(j-1))+"を入力";
         var buttonInstance = document.getElementById("Button"+org_choice_label[j]);
         buttonInstance.id = "Button"+ new_alphabet_label;
-        //×ボタンを押したときに消すidも更新
-        //var new_func = del_update_id(j-1);
-        //buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");
-        //buttonInstance.onclick = new Function(del_update_id(label_num_array[j-1]));
-        //buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }
-        //buttonInstance.onclick = del_update_id(label_num_array[j-1]);
-        buttonInstance.setAttribute("onclick", "del_update_id("+label_num_array[j-1]+")"); 
+         
     }
     unable_button();
 }
