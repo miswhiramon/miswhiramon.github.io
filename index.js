@@ -59,6 +59,9 @@ function addForm(i) {
             <div class="col-6">
                 <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id=`+i+`>
             </div>
+            <div class="col-1">
+                <button type="button"><img src="images/icon_x.png" alt="削除" />
+            </button>
         </div>
         
     </div>
