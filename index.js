@@ -94,7 +94,7 @@ function del_update_id(i){
     for(var j=i+1;i<num_choice;j++){
         var instance = document.getElementById(org_choice_label[j]);
         instance.id = org_choice_label[j-1];
-        var titleInstance = getElementById("Title"+ org_choice_label[j]);
+        var titleInstance = document.getElementById("Title"+ org_choice_label[j]);
         titleInstance.textContent = org_choice_label(j-1);
     }
 
