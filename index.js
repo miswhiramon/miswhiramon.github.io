@@ -74,6 +74,7 @@ function addForm(i) {
     </div>
     `);
     i++;
+    num_choice+=1;
     
 }
 
