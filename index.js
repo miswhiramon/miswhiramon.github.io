@@ -29,6 +29,9 @@ function init(){
     drawBarChart();
 
     time_value.innerHTML = "<h3><font color = blue> 60</font></h3>";
+    document.getElementById("form_list").appendChild(
+        
+    );
 }
 
 init();
