@@ -61,17 +61,22 @@ function addForm(i) {
     var parent = document.getElementById('form_area');
     parent.insertAdjacentHTML('beforeend',`
     
-    <div class="row" id=`+ org_choice_label[i] +`>
+    <div class="row" id="`+ org_choice_label[i] +`">
         <div class="col-1 d-flex align-items-center">` + org_choice_label[i] + `</div>
         <div class="col-4 d-flex align-items-center">
-            <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id=`+i+`>
+            <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="`+ org_choice_label[i] +`">
         </div>
         <div class="col-1 d-flex align-items-center">
-            <div class="batsu d-flex align-items-center" id=`+ org_choice_label[i] +`></div>
+            <div class="batsu d-flex align-items-center" id="`+ org_choice_label[i] +`" onclick="deleteForm(`+ i +`)"></div>
         </button>
     </div>
     `);
     i++;
+}
+
+function deleteForm(i){
+    var delete_form = document.getElementById(org_choice_label[i]);
+    delete_form.remove();
 }
 
 function Hankaku2zenkaku(str) {
