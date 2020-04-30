@@ -218,8 +218,6 @@ var make_sample
 button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 function plus_or_minus(flag){
     if(flag==1 && num_choice<10){
-        num_choice += 1;
-        
         org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
         org_counter_array=[20,20,20,20,20,20,20,20,20,20];
         choice_label=org_choice_label.slice(0,num_choice);
@@ -228,9 +226,7 @@ function plus_or_minus(flag){
         make_sample=true;
         drawBarChart();
         addForm(num_choice-1);
-    }else if(flag==-1 && num_choice>2){
-        num_choice -= 1;
-        
+    }else if(flag==-1 && num_choice>2){        
         org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
         org_counter_array=[20,20,20,20,20,20,20,20,20,20];
         choice_label=org_choice_label.slice(0,num_choice);
