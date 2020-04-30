@@ -116,7 +116,7 @@ function del_update_id(i){
 }
 
 function unable_button(){
-    var buttonInstance0 = document.getElementById("Button"+org_choice_label[0]);
+    /*var buttonInstance0 = document.getElementById("Button"+org_choice_label[0]);
     var buttonInstance1 = document.getElementById("Button"+org_choice_label[0]);
     if(num_choice<=2){        
         buttonInstance0.onclick="";
@@ -124,7 +124,7 @@ function unable_button(){
     }else{
         buttonInstance0.onclick= new Function("del_update_id("+ label_num_array[0] +")");
         buttonInstance1.onclick= new Function("del_update_id("+ label_num_array[1] +")");
-    }
+    }*/
 }
 
 function Hankaku2zenkaku(str) {
