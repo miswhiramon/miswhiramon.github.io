@@ -40,9 +40,9 @@ function drawBarChart(){
     var proportion = data.map(function(num){
         return 100*(num/all_choice_counter);
     })
-    if(make_sample){
+    /*if(make_sample){
         proportion=counter_array;
-    }
+    }*/
     var labels = choice_label;
 
     

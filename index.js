@@ -267,27 +267,25 @@ var counter_array
 //何択投票にするか
 
 
-var make_sample
+//var make_sample
 button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
 function plus_or_minus(flag){
+    //org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
+    //org_counter_array=[20,20,20,20,20,20,20,20,20,20];
     if(flag==1 && num_choice<10){
-        org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
-        org_counter_array=[20,20,20,20,20,20,20,20,20,20];
-        choice_label=org_choice_label.slice(0,num_choice);
+        /*choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
         all_choice_counter=1;
         make_sample=true;
-        drawBarChart();
+        drawBarChart();*/
         addForm(num_choice);
         unable_button();
     }else if(flag==-1 && num_choice>2){        
-        org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
-        org_counter_array=[20,20,20,20,20,20,20,20,20,20];
-        choice_label=org_choice_label.slice(0,num_choice);
+        /*choice_label=org_choice_label.slice(0,num_choice);
         counter_array=org_counter_array.slice(0,num_choice);
         all_choice_counter=1;
         make_sample=true;
-        drawBarChart();
+        drawBarChart();*/
         deleteForm(num_choice-1);
         unable_button();
     }
