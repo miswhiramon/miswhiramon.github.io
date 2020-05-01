@@ -58,7 +58,7 @@ function drawBarChart(){
             {
                 label: 'コメント割合',
                 data: proportion,
-                backgroundColor: "rgba(150,255,255,0.5)"
+                backgroundColor: "rgba(120,255,255,0.5)"
                 //backgroundColor: "rgba(219,39,91,0.5)"
             }
         ]
