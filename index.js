@@ -88,7 +88,7 @@ function deleteForm(i){
     var delete_form = document.getElementById(org_choice_label[i]);
     delete_form.remove();
     num_choice-=1;
-    button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
+    button_value.innerHTML = num_choice;
 }
 
 function del_update_id(i){
@@ -268,7 +268,7 @@ var counter_array
 
 
 //var make_sample
-button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
+button_value.innerHTML = num_choice;
 function plus_or_minus(flag){
     //org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
     //org_counter_array=[20,20,20,20,20,20,20,20,20,20];
@@ -290,7 +290,7 @@ function plus_or_minus(flag){
         unable_button();
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
-    button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
+    button_value.innerHTML = num_choice;
 }
 
 var vote_time=60;
