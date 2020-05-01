@@ -117,6 +117,7 @@ function del_update_id(i){
         //buttonInstance.onclick = new Function(del_update_id(label_num_array[j-1]));
         //buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }
         //buttonInstance.onclick = del_update_id(label_num_array[j-1]);
+        //関数の引数もStringに変換
         buttonInstance.setAttribute("onclick", "del_update_id("+String(j-1)+")");    
     }
     unable_button();
