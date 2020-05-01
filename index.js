@@ -125,7 +125,7 @@ function del_update_id(i){
 
 function unable_button(){
     var buttonInstance0 = document.getElementById("Button"+org_choice_label[0]);
-    var buttonInstance1 = document.getElementById("Button"+org_choice_label[0]);
+    var buttonInstance1 = document.getElementById("Button"+org_choice_label[1]);
     if(num_choice<=2){
         buttonInstance0.style.visibility = "hidden";
         buttonInstance1.style.visibility = "hidden";
