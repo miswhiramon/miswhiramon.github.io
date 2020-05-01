@@ -1,11 +1,29 @@
 body {overflow:hidden;}
 
+.myCard {
+    height:100%;
+}
+
+.myCard-header {
+    background-color: #BBB;
+}
+
+.myCard-body {
+    padding: 10px 10px
+}
+
+body {
+    overflow:hidden;
+}
+
 html, body { 
     height: 100%; 
 }
+
 #first_stage {
     height : 100%;
 }
+
 
 #kusa {font-size:15px;
     color:green;}
