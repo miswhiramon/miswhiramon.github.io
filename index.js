@@ -194,6 +194,8 @@ function start_vote(){
     org_counter_array=[0,0,0,0,0,0,0,0,0,0];
     choice_label=org_choice_label.slice(0,num_choice);
     counter_array=org_counter_array.slice(0,num_choice);
+    //ラベルの名前を取得
+    get_label_array();
     //make_sample=false;
 
     var timer_value = document.getElementById("timer_value");
@@ -217,6 +219,7 @@ function start_vote(){
 var label_name_array=[];
 //入力したラベルを配列に入れて、グラフ用として保持する
 function get_label_array(){
+    label_name_array=[];
     for(i=0;i<num_choice;i++){
         var label_text = document.getElementById("Form"+org_choice_label[i]).value;
         label_name_array.push(label_text);
