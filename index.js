@@ -95,7 +95,7 @@ function del_update_id(i){
     //とりあえず、削除する
     deleteForm(i);
     //ずれた分のidやアルファベットを以下で修正してつじつま合わせする。
-    for(var j=i+1;j<num_choice;j++){
+    for(var j=i+1;j<=num_choice;j++){
         //削除でずれてしまった分array[j-1]に対応するidやアルファベットをarray[j]に代入する。
         var new_alphabet_label = org_choice_label[j-1];       
 
@@ -116,8 +116,8 @@ function del_update_id(i){
         //buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");
         //buttonInstance.onclick = new Function(del_update_id(label_num_array[j-1]));
         //buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }
-        buttonInstance.onclick = del_update_id(label_num_array[j-1]);
-        //buttonInstance.setAttribute("onclick", "del_update_id("+label_num_array[j-1]+")");         
+        //buttonInstance.onclick = del_update_id(label_num_array[j-1]);
+        buttonInstance.setAttribute("onclick", "del_update_id("+label_num_array[j-1]+")");         
     }
     unable_button();
 }
