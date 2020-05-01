@@ -94,7 +94,7 @@ function drawBarChart(){
                     //canvasを取得
                     var ctx = this.chart.ctx;
                     ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
-                    ctx.textAlign = 'center';
+                    ctx.textAlign = 'start';
                     ctx.textBaseline = 'bottom';
                     this.data.datasets.forEach(function (dataset) {
                         for (var i = 0; i < dataset.data.length; i++) {
