@@ -70,11 +70,11 @@ function addForm(i) {
     parent.insertAdjacentHTML('beforeend',`
     
     <div class="row" id="`+ org_choice_label[i] +`">
-        <div class="col-1 d-flex align-items-center" id="Title`+ org_choice_label[i] +`">` + org_choice_label[i] + `</div>
-        <div class="col-4 d-flex align-items-center">
+        <div class="col-2 d-flex align-items-center" id="Title`+ org_choice_label[i] +`">` + org_choice_label[i] + `</div>
+        <div class="col-8 d-flex align-items-center">
             <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="Form`+ org_choice_label[i] +`">
         </div>
-        <div class="col-1 d-flex align-items-center">
+        <div class="col-2 d-flex align-items-center">
             <div class="batsu d-flex align-items-center" id="Button`+ org_choice_label[i] +`" onclick="del_update_id(`+ String(i) +`)"></div>
         </button>
     </div>
