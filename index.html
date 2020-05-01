@@ -52,19 +52,20 @@
                     <div class="row" >
                         <div class="col-6">
                             <div class="row" >
-                                <h6 class="card-title">選択肢の数</h6>
+                                <h6 class="mx-auto">選択肢の数</h6>
                             </div>
                             <div class="row" >
-                                <div class="col-2" align-items: stretch>
-                                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="plus_or_minus(-1)">-</button>
+                                <div class="col-4" align-items: stretch>
+                                    <button type="button float-right" class="btn btn-outline-primary btn-lg" onclick="plus_or_minus(-1)">-</button>
                                 </div>
-                                <div class="col-2" align-items: stretch>
-                                    <button type="button" class="btn btn-outline-danger btn-lg" onclick="plus_or_minus(1)">+</button>
+                                <div class="col-4">
+                                    <div id="button_value" class="mx-auto"></div>             
+                                </div>
+                                <div class="col-4" align-items: stretch>
+                                    <button type="button float-left" class="btn btn-outline-danger btn-lg" onclick="plus_or_minus(1)">+</button>
                                 </div>
                                 
-                                <div class="col-8">
-                                    <div id="button_value" class="center-block"></div>             
-                                </div>
+                                
                             </div>
 
                             <div class="row" >
