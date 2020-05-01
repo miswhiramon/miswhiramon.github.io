@@ -50,15 +50,6 @@ function init(){
 
 init();
 
-/*function addForm(i) {
-  var input_data = document.createElement('input');
-  input_data.type = 'text';
-  input_data.id = 'inputform_' + i;
-  input_data.placeholder = 'フォーム-' + i;
-  var parent = document.getElementById('form_area');
-  parent.appendChild(input_data);
-  i++;
-}*/
 
 //フォームのラベルアルファベットを格納する配列
 //選択肢の番号を格納する配列
@@ -112,11 +103,6 @@ function del_update_id(i){
         buttonInstance.id = "Button"+ new_alphabet_label;
 
         //×ボタンを押したときに消すidも更新
-        //var new_func = del_update_id(j-1);
-        //buttonInstance.onclick = new Function("del_update_id("+ label_num_array[j-1] +")");
-        //buttonInstance.onclick = new Function(del_update_id(label_num_array[j-1]));
-        //buttonInstance.onclick = function() { del_update_id(label_num_array[j-1]); }
-        //buttonInstance.onclick = del_update_id(label_num_array[j-1]);
         //関数の引数もStringに変換
         buttonInstance.setAttribute("onclick", "del_update_id("+String(j-1)+")");    
     }
