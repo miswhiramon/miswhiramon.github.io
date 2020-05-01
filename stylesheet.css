@@ -6,6 +6,7 @@ body {overflow:hidden;}
 
 .myCard-header {
     background-color: #BBB;
+    padding: 15px;
 }
 
 .myCard-body {
