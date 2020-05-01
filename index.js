@@ -35,7 +35,7 @@ function init(){
     counter_array=org_counter_array.slice(0,4);
     all_choice_counter=1;
     make_sample=true;
-    drawBarChart();
+    //drawBarChart();
 
     time_value.innerHTML = "<h3><font color = blue> 60</font></h3>";
 
