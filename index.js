@@ -225,6 +225,7 @@ function get_label_array(){
         label_name_array.push(label_text);
         console.log(label_text);
     }
+    console.log(label_name_array);
 }
 
 
