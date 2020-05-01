@@ -11,6 +11,8 @@ function sendChatMessage() {
 
 //var kusa_counter = 0;
 //var all_comment_counter = 0;
+
+//all_choice_counterは投票の総数を格納する変数
 var all_choice_counter = 0;
 
 var keyword_counter = 0;
