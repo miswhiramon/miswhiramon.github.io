@@ -277,6 +277,7 @@ function plus_or_minus(flag){
         make_sample=true;
         drawBarChart();
         addForm(num_choice);
+        unable_button();
     }else if(flag==-1 && num_choice>2){        
         org_choice_label=["A","B","C","D","E","F","G","H","I","J"];
         org_counter_array=[20,20,20,20,20,20,20,20,20,20];
@@ -286,6 +287,7 @@ function plus_or_minus(flag){
         make_sample=true;
         drawBarChart();
         deleteForm(num_choice-1);
+        unable_button();
     }
     //button_value.textContent = "選択肢の数:"+num_choice;
     button_value.innerHTML = "<h3><font color = blue> " + num_choice + "</font></h3>";
