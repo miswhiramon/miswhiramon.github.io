@@ -175,7 +175,7 @@ window.addEventListener('message', function(event) {
 
         keyword_count.innerHTML = checkword + ":" + keyword_counter + "<br>" 
         + checkword + "割合" + keyword_counter/all_comment_counter*100 + "%<br>";*/
-        drawPieChart();
+        //drawPieChart();
         drawBarChart();
     }    
   }, false);
