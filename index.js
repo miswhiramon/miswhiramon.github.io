@@ -63,7 +63,7 @@ init();
 //フォームのラベルアルファベットを格納する配列
 //選択肢の番号を格納する配列
 var label_array=["A","B","C","D","E","F","G","H","I","J"];
-var label_num_array=[1,2,3,4,5,6,7,8,9];
+var label_num_array=[0,1,2,3,4,5,6,7,8,9];
 
 function addForm(i) {
     var parent = document.getElementById('form_area');
