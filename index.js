@@ -111,6 +111,8 @@ function del_update_id(i){
     unable_button();
 }
 
+
+//2個以下なら×ボタンを消して、3個以上なら×ボタンを再表示
 function unable_button(){
     var buttonInstance0 = document.getElementById("Button"+org_choice_label[0]);
     var buttonInstance1 = document.getElementById("Button"+org_choice_label[1]);
@@ -125,6 +127,7 @@ function unable_button(){
     }
 }
 
+//半角を全角に変換する関数
 function Hankaku2zenkaku(str) {
     return str.replace(/[A-Za-z0-9]/g, function(s) {
         return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
@@ -209,6 +212,16 @@ function start_vote(){
     };
     // 1秒ごとに"test"と表示されるタイマー
     var timer = setInterval(log, 1000);
+}
+
+var label_name_array=[];
+//入力したラベルを配列に入れて、グラフ用として保持する
+function get_label_array(){
+    for(i=0;i<num_choice;i++){
+        var label_text = document.getElementById("Form"+org_choice_label[i]).value;
+        label_name_array.push(label_text);
+        console.log(get_label_array[i]);
+    }
 }
 
 

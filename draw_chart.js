@@ -100,7 +100,6 @@ function drawBarChart(){
                             var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
                             console.log(dataset.data[i] + ":" + model.x + ":" + model.y);
                             ctx.fillText(dataset.data[i].toFixed(1)+"%", model.x*1.05+15, model.y*1.05);
-                            
                         }
                     });
                 }
