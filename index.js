@@ -223,7 +223,7 @@ function get_label_array(){
     for(i=0;i<num_choice;i++){
         var label_text = document.getElementById("Form"+org_choice_label[i]).value;
         label_name_array.push(label_text);
-        console.log(get_label_array[i]);
+        console.log(label_text);
     }
 }
 
