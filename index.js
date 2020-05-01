@@ -127,9 +127,11 @@ function unable_button(){
     var buttonInstance0 = document.getElementById("Button"+org_choice_label[0]);
     var buttonInstance1 = document.getElementById("Button"+org_choice_label[1]);
     if(num_choice<=2){
+        //CSSを書き換えてhiddenにする
         buttonInstance0.style.visibility = "hidden";
         buttonInstance1.style.visibility = "hidden";
     }else{
+        //CSSを書き換えてvisibleにする
         buttonInstance0.style.visibility = "visible";
         buttonInstance1.style.visibility = "visible";
     }
