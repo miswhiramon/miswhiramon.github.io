@@ -81,7 +81,7 @@ function addForm(i) {
     `);
     i++;
     num_choice+=1;
-    unable_button();
+    //unable_button();
 }
 
 function deleteForm(i){
