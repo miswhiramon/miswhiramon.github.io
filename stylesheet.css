@@ -1,6 +1,7 @@
 body {overflow:hidden;}
 
 .myCard {
+    background-color: rgba(255,255,210,0.6)i;
     height:100%;
 }
 
@@ -10,7 +11,7 @@ body {overflow:hidden;}
 }
 
 .myCard-body {
-    background-color: khaki;
+    
     padding: 10px 10px
 }
 
