@@ -23,6 +23,10 @@ body {overflow:hidden;}
     border-radius: 10px;
 }
 
+.usage{
+    padding: 10px;
+}
+
 body {
     overflow:hidden;
 }
