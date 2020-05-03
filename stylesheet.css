@@ -10,6 +10,7 @@ body {overflow:hidden;}
 }
 
 .myCard-body {
+    background-color: khaki;
     padding: 10px 10px
 }
 
