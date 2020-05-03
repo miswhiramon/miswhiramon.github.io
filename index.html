@@ -49,43 +49,46 @@
                     </div>
                 </div>
                 <div class="myCard-body">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-6">
-                            <div class="row" >
-                                <div class="mx-auto">
-                                    <h6>選択肢の数</h6>
+                            <div class="items">
+                                <div class="row" >
+                                    <div class="mx-auto">
+                                        <h6>選択肢の数</h6>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row" >
-                                <div class="col-4" align-items: stretch style="text-align: center;">
-                                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="plus_or_minus(-1)">-</button>
+                                <div class="row" >
+                                    <div class="col-4" align-items: stretch style="text-align: center;">
+                                        <button type="button" class="btn btn-outline-primary btn-lg" onclick="plus_or_minus(-1)">-</button>
+                                    </div>
+                                    <div class="col-4 mx-auto">
+                                        <div id="button_value" style="text-align: center;"></div>             
+                                    </div>
+                                    <div class="col-4" align-items: stretch style="text-align: center;">
+                                        <button type="button" class="btn btn-outline-danger btn-lg" onclick="plus_or_minus(1)">+</button>
+                                    </div>
                                 </div>
-                                <div class="col-4 mx-auto">
-                                    <div id="button_value" style="text-align: center;"></div>             
-                                </div>
-                                <div class="col-4" align-items: stretch style="text-align: center;">
-                                    <button type="button" class="btn btn-outline-danger btn-lg" onclick="plus_or_minus(1)">+</button>
-                                </div>
-                                
-                                
                             </div>
 
-                            <div class="row" >
-                                <div class="mx-auto">
-                                    <h6 class="card-title">投票時間を入力</h6>
-                                </div>                                
-                            </div>
-                            <div class="row" >
-                                <div class="col-4" align-items: stretch>
-                                    <button type="button" class="btn btn-outline-primary btn-lg" onclick="time_manage(-1)">-10</button>
+                            <div class="items">
+                                <div class="row" >
+                                    <div class="mx-auto">
+                                        <h6 class="card-title">投票時間を入力</h6>
+                                    </div>                                
                                 </div>
-                                <div class="col-4" align-items: stretch>
-                                    <button type="button" class="btn btn-outline-danger btn-lg" onclick="time_manage(1)">+10</button>
+                                <div class="row" >
+                                    <div class="col-4" align-items: stretch>
+                                        <button type="button" class="btn btn-outline-primary btn-lg" onclick="time_manage(-1)">-10</button>
+                                    </div>
+                                    <div class="col-4" align-items: stretch>
+                                        <button type="button" class="btn btn-outline-danger btn-lg" onclick="time_manage(1)">+10</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <div id="time_value" style="text-align: center;"></div>             
+                                    </div>
                                 </div>
-                                <div class="col-4">
-                                    <div id="time_value" style="text-align: center;"></div>             
-                                </div>
-                            </div>
+                            </div>                            
+
                         </div>
 
                         <!--form area-->

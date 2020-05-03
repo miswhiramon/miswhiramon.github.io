@@ -6,13 +6,20 @@ body {overflow:hidden;}
 }
 
 .myCard-header {
-    background-color: #BBB;
+    background-color: orange;
     padding: 15px;
 }
 
 .myCard-body {
     background-color: rgba(255,255,210,0.6);
     padding: 10px 10px
+}
+
+.items {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+    border-radius: 20px;
 }
 
 body {
