@@ -305,7 +305,7 @@ function time_manage(flag){
     }else if(flag==-1 && vote_time>20){
         vote_time-=10;
     }
-    time_value.innerHTML = "<h3><font color = blue> " + vote_time + "</font></h3>";
+    time_value.innerHTML = "<h3><font color = blue> " + vote_time + "[秒]</font></h3>";
 }
 
 
