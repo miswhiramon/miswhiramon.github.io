@@ -16,9 +16,10 @@ body {overflow:hidden;}
 }
 
 .items {
+    background-color: white;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #333333;
+    border: 1px solid yellow;
     border-radius: 20px;
 }
 
