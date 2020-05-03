@@ -39,7 +39,7 @@ function init(){
     make_sample=true;
     //drawBarChart();
 
-    time_value.innerHTML = "<h3><font color = blue> 60</font></h3>";
+    time_value.innerHTML = "<h3><font color = blue> 60[秒]</font></h3>";
 
 
     addForm(0);
