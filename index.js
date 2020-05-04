@@ -39,7 +39,8 @@ function init(){
     make_sample=true;
     //drawBarChart();
 
-    time_value.innerHTML = "60[秒]";
+    time_value.innerHTML = " <span style='font-size : 25px'>60[秒]</span>";
+    
 
 
     addForm(0);
@@ -305,7 +306,7 @@ function time_manage(flag){
     }else if(flag==-1 && vote_time>20){
         vote_time-=10;
     }
-    time_value.innerHTML = vote_time + "[秒]";
+    time_value.innerHTML = vote_time + " <span style='font-size : 25px'>[秒]</span>";
 }
 
 
