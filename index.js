@@ -64,15 +64,17 @@ function addForm(i) {
     parent.insertAdjacentHTML('beforeend',`
     
     <div class="row" id="`+ org_choice_label[i] +`">
-        <div class="col-2 mx-auto" style="text-align:center" id="Title`+ org_choice_label[i] +`">` + org_choice_label[i] + `</div>
-        <div class="col-8 mx-auto">
-            <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="Form`+ org_choice_label[i] +`">
+        <div class="col-2" style="display: flex; justify-content: center; align-items: center;" id="Title`+ org_choice_label[i] +`">` + org_choice_label[i] + `</div>
+        <div class="col-8 d-flex align-items-center">
+            <input type="text" placeholder="選択肢`+Hankaku2zenkaku(String(i))+`を入力" id="Form`+ org_choice_label[i] +`" style="width:100%;">
         </div>
-        <div class="col-2 mx-auto">
-            <div class="batsu mx-auto" id="Button`+ org_choice_label[i] +`" onclick="del_update_id(`+ String(i) +`)"></div>
+        <div class="col-2 d-flex align-items-center">
+            <div class="batsu d-flex align-items-center" id="Button`+ org_choice_label[i] +`" onclick="del_update_id(`+ String(i) +`)"></div>
         </button>
     </div>
     `);
+
+
     i++;
     num_choice+=1;
     //unable_button();
