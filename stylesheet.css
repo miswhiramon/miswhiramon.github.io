@@ -31,6 +31,35 @@ body {overflow:hidden;}
     border-radius: 10px;
 }
 
+.clock {
+	font-size: 100px;
+	position: relative;
+	width: 1.4em;
+	height: 1.4em;
+	border: 0.1em solid #39a9d6;
+	border-radius: 100%;
+}
+/* 長針 */
+.clock::before {
+	content: "";
+	position: absolute;
+	top: 0.2em;
+	left: 0.65em;
+	width: 0.1em;
+	height: 0.6em;
+	background-color: #39a9d6;
+}
+/* 短針 */
+.clock::after {
+	content: "";
+	position: absolute;
+	top: 0.7em;
+	left: 0.65em;
+	width: 0.55em;
+	height: 0.1em;
+	background-color: #39a9d6;
+}
+
 .usage{
     padding: 10px;
 }
