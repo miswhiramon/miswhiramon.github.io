@@ -44,6 +44,11 @@ html, body {
     font-size : 30px;
 }
 
+#time_value {
+    color : #525252;
+    font-size : 30px;
+}
+
 #kusa {font-size:15px;
     color:green;}
 
