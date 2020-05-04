@@ -66,6 +66,16 @@ html, body {
 #kusa {font-size:15px;
     color:green;}
 
+#hukidashi:before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: -43px;
+    margin-top: -30px;
+    border: 30px solid transparent;
+    border-right: 30px solid white;
+}
+
 .bar {
     animation-name: anime1;
     animation-duration: 5s;
