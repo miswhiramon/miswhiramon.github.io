@@ -15,9 +15,17 @@ body {overflow:hidden;}
     padding: 10px 10px
 }
 
-.items {
+/*.items {
     background-color: white;
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}*/
+
+.items {
+    background-color: white;
+    padding: 10px 0px 15px 0px;
     margin-bottom: 10px;
     border: 1px solid gainsboro;
     border-radius: 10px;
