@@ -142,14 +142,21 @@
         -->
         
         <div id="second_stage">
-            <div class="row">
-                <div class="col-9">
-                    
-                </div>
-                <div class="col-3">
-                    <button type="button" class="btn-primary btn-block" onclick="second2first()">戻る</button>
+            <div class="myCard border border-secondary text-gray">
+                <div class="myCard-header">
+                    <div class="col-5">
+                        <h4>投票</h4>
+                    </div>
+                    <div class="col-4">
+                        <!-- background colorボタン -->
+                        <button type="button" class="background_color" onclick="back_color()" autofocus="true">クロマキー用背景</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn-primary btn-block" onclick="second2first()">戻る</button>
+                    </div>
                 </div>
             </div>
+            
 
             <!-- 投票を開始するボタン -->
             <button type="button" class="vote_btn" onclick="start_vote()" autofocus="true">投票開始</button>
