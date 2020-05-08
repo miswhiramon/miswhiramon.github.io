@@ -155,27 +155,30 @@
                         <button type="button" class="btn-primary btn-block" onclick="second2first()">戻る</button>
                     </div>
                 </div>
+                <div class="myCard-body">
+                    <!-- 投票を開始するボタン -->
+                    <button type="button" class="vote_btn" onclick="start_vote()" autofocus="true">投票開始</button>
+                    <!--timer counter-->
+                    <div id="timer_value"></div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <canvas id="myBarChart"></canvas>
+                        </div>
+                        <!--
+                            <div class="col-6">
+                                <canvas id="myPieChart"></canvas>
+                            </div> 
+                        -->
+                                    
+                    </div>
+                </div>
             </div>
             
 
-            <!-- 投票を開始するボタン -->
-            <button type="button" class="vote_btn" onclick="start_vote()" autofocus="true">投票開始</button>
+            
 
-            <!--timer counter-->
-            <div id="timer_value"></div>
-
-            <h2>コメントグラフ</h2>
-            <div class="row">
-                <div class="col-12">
-                    <canvas id="myBarChart"></canvas>
-                </div>
-                <!--
-                    <div class="col-6">
-                        <canvas id="myPieChart"></canvas>
-                    </div> 
-                -->
-                               
-            </div>
+            
         </div>
         
         
