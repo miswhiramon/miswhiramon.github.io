@@ -49,6 +49,12 @@ html, body {
     margin : 5px 0px 7px 0px;
 }
 
+.info_box {
+    font-size : 30px;
+    color : #525252;
+    margin : 5px 0px 7px 0px;
+}
+
 #first_stage {
     height : 100%;
 }
